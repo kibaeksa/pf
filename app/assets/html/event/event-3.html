@@ -1,0 +1,72 @@
+<style>
+.mobile-hidden{display: block;}
+.pc-hidden{display: none;}
+
+.mobile-hidden img{display: block;}
+@media only screen and (max-width: 767px) {
+    .mobile-hidden{display: none;}
+    .pc-hidden{display: block;}
+
+    .pc-hidden > div{overflow: hidden; position: relative;}
+    .pc-hidden > div img{display: block;}
+    .pc-hidden div a{text-indent: -1000px;}
+
+    .section_m_02 .btn_with_box a{display: inline-block; position: absolute; top:66.2162%; left:50%; width: 74.6666%; height: 9.6846%; margin-left: -37.3333%;}
+
+    .section_m_04 .btn_with_box a{display: inline-block; position: absolute;}
+    .section_m_04 .btn_with_box a:nth-child(1){top:51.0742%; left:50%; width: 85.3333%; height: 9.7656%; margin-left: -42.6666%;}
+    .section_m_04 .btn_with_box a:nth-child(2){top:62.5%; left:7.6%; width: 41.7333%; height: 9.7656%;}
+    .section_m_04 .btn_with_box a:nth-child(3){top:62.5%; right:7.6%; width: 41.7333%; height: 9.7656%;}
+}
+.dn{display: none;}
+</style>
+
+<div class="event-image">
+
+    <div class="mobile-hidden">
+        <div>
+            <img src="events/1709_AD_openevent_A_01.jpg?$staticlink$" alt="">
+        </div>
+        <div class="dn">
+            <img src="events/1709_AD_openevent_A_02.jpg?$staticlink$" alt="" usemap="#event-3-02" border="0">
+            <map name="event-3-02" id="event-3-02">
+                <area class="coupon-button-01 download-coupon-event" shape="rect" coords="529,353,762,403" href="$url('Coupon-Download','couponCode', 'Aderma_5000')$" onfocus="this.blur()">
+            </map>
+        </div>
+        <div>
+            <img src="events/1709_AD_openevent_A_03.jpg?$staticlink$" alt="">
+        </div>
+        <div>
+            <img src="events/1709_AD_openevent_A_04.jpg?$staticlink$" alt="" usemap="#event-3-04" border="0">
+            <map name="event-3-04" id="event-3-04">
+                <area shape="rect" coords="115,466,357,523" href="http://www.dermo-cosmeshop.co.kr/aderma-products" onfocus="this.blur()">
+                <area shape="rect" coords="375,466,617,523" href="http://www.dermo-cosmeshop.co.kr/about-aderma.html" onfocus="this.blur()">
+                <area shape="rect" coords="632,466,873,523" href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+            </map>
+        </div>
+    </div>
+
+    <div class="pc-hidden">
+        <div class="section_m_01">
+            <img src="events/1709_AD_openevent_A_m_01.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_02 dn">
+            <img src="events/1709_AD_openevent_A_m_02.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <a class="coupon-button-01 download-coupon-event" href="$url('Coupon-Download','couponCode', 'Aderma_5000')$" onfocus="this.blur()">5000원 쿠폰 다운받기</a>
+            </div>
+        </div>
+        <div class="section_m_03">
+            <img src="events/1709_AD_openevent_A_m_03.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_04">
+            <img src="events/1709_AD_openevent_A_m_04.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">페이스북 간편가입</a>
+                <a href="http://www.dermo-cosmeshop.co.kr/aderma-products" onfocus="this.blur()">아더마 전체상품 보기</a>
+                <a href="http://www.dermo-cosmeshop.co.kr/about-aderma.html" onfocus="this.blur()">아더마 브랜드 스토리</a>
+            </div>
+        </div>
+    </div>
+
+</div>

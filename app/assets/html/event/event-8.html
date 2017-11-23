@@ -1,0 +1,65 @@
+<style>
+.mobile-hidden{display: block;}
+.pc-hidden{display: none;}
+
+.mobile-hidden img{display: block;}
+@media only screen and (max-width: 767px) {
+    .mobile-hidden{display: none;}
+    .pc-hidden{display: block;}
+
+    .pc-hidden > div{overflow: hidden; position: relative;}
+    .pc-hidden > div img{display: block;}
+    .pc-hidden div a{text-indent: -1000px;}
+
+    .section_m_02 .btn_with_box a{display: inline-block; position: absolute;}
+    .section_m_02 .btn_with_box a:nth-child(1){top:6.8160%; left:10%; width: 80%; height: 17.9738%;}
+    .section_m_02 .btn_with_box a:nth-child(2){top:32.3996%; left:10%; width: 80%; height: 17.9738%;}
+    .section_m_02 .btn_with_box a:nth-child(3){top:57.5863%; left:10%; width: 80%; height: 17.9738%;}
+    .section_m_02 .btn_with_box a:nth-child(4){top:80.8356%; left:10%; width: 80%; height: 17.9738%;}
+}
+.dn{display: none;}
+</style>
+
+<div class="event-image">
+
+    <div class="mobile-hidden">
+        <div>
+            <img src="events/1709_KL_openevent_01.jpg?$staticlink$" alt="">
+        </div>
+        <div>
+            <img src="events/1709_KL_openevent_02.jpg?$staticlink$" alt="" usemap="#event-8-02" border="0">
+            <map name="event-8-02" id="event-8-02">
+                <area shape="rect" coords="42,60,942,512" href="$httpUrl('Product-Show','pid','210281')$" onfocus="this.blur()">
+                <area shape="rect" coords="42,542,942,942" href="$httpUrl('Product-Show','pid','210282')$" onfocus="this.blur()">
+                <area shape="rect" coords="42,972,942,1422" href="$httpUrl('Product-Show','pid','210283')$" onfocus="this.blur()">
+                <area shape="rect" coords="42,1452,942,1900" href="$httpUrl('Product-Show','pid','210285')$" onfocus="this.blur()">
+            </map>
+        </div>
+        <div>
+            <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+                <img src="events/1709_KL_openevent_03.jpg?$staticlink$" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="pc-hidden">
+        <div class="section_m_01">
+            <img src="events/1709_KL_openevent_m_01.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_02">
+            <img src="events/1709_KL_openevent_m_02.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <a href="$httpUrl('Product-Show','pid','210281')$" onfocus="this.blur()"></a>
+                <a href="$httpUrl('Product-Show','pid','210282')$" onfocus="this.blur()"></a>
+                <a href="$httpUrl('Product-Show','pid','210283')$" onfocus="this.blur()"></a>
+                <a href="$httpUrl('Product-Show','pid','210285')$" onfocus="this.blur()"></a>
+            </div>
+        </div>
+        <div class="section_m_03">
+            <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+                <img src="events/1709_KL_openevent_m_03.jpg?$staticlink$" alt="" border="0">
+            </a>
+        </div>
+    </div>
+
+</div>

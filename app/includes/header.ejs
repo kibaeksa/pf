@@ -1,0 +1,918 @@
+<!-- HEADER START -->
+<div class="header">
+    <div class="menu-scroll-bar">
+        <div class="top-header">
+            <div class="customer-action clearfix">
+                <div class="content-asset">
+                    <%- customerCenterHeader  %>
+                </div>
+            </div>
+        </div>
+
+        <div class="reversed-header"><span class="visually-hidden">Reversed header for sticky header on mobile</span></div>
+
+        <header class="clearfix">
+            <div class="wrap_header">
+                <div class="btn-menu"></div>
+                <div class="logo">
+                    <a href="/home">
+                        <picture>
+                            <source srcset="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw272622b3/images/header/pfdc-logo-desk.png" media="(min-width: 992px)">
+                            <img srcset="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dwcb8893d4/images/header/pfdc-logo-mob.png"
+                                 alt="피에르파브르 더모코스메틱 공식 스토어"
+                                 title="피에르파브르 더모코스메틱 공식 스토어">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="btn-search">
+                    <span class="icon-SEARCH"></span>
+                </div>
+
+                <div class="search-box">
+                    <form role="search" action="/search" method="get" name="simpleSearch">
+                        <span class="icon-CLOSE close-search"></span>
+                        <input type="text" id="q" name="q" value="" placeholder="키워드로 검색해보세요" maxlength="15">
+                        <input type="hidden" name="lang" value="ko_KR"/>
+                        <button type="submit">
+                            <span class="icon-SEARCH icon-SEARCH-button"></span>
+                        </button>
+                        <div class="search-suggestion">
+                            <ul class="search-suggestion-wrap">
+                                <li class="ss-header">
+                                    <p>건조한 날씨 당신을 위한 핫키워드</p>
+                                </li>
+
+                                    <li class="item">
+                                        <div class="order">1</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%ED%81%B4%EB%A1%9C%EB%9E%80%EB%BF%8C%EB%A6%AC%EC%98%81%EC%96%91%EC%84%B8%EB%9F%BC">클로란뿌리영양세럼</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">2</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%EC%8B%9C%EC%B9%BC%ED%8C%8C%ED%8A%B8%20S.O.S%20%ED%81%AC%EB%A6%BC">시칼파트 S.O.S 크림</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">3</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=NEW%20%EC%8B%9C%EC%B9%BC%ED%8C%8C%ED%8A%B8%20%EB%B8%94%EB%A3%A8%EC%A0%A4">NEW 시칼파트 블루젤</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">4</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%EC%95%84%EB%B2%A4%EB%8A%90%ED%95%91%ED%81%AC%ED%86%A0%EB%84%88">아벤느핑크토너</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">5</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%ED%8F%AC%ED%8B%B0%EC%83%A4%ED%8A%B9%EB%B3%84%EA%B5%AC%EC%84%B1">포티샤특별구성</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">6</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%EB%B2%A0%EC%9D%B4%EB%B9%84%ED%8E%98%EC%96%B4%EC%84%B8%ED%8A%B8">베이비페어세트</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">7</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=%EB%A5%B4%EB%84%A4%ED%9C%98%ED%85%8C%EB%A5%B4%203-STEP">르네휘테르 3-STEP</a></div>
+                                    </li>
+
+                                    <li class="item">
+                                        <div class="order">8</div>
+                                        <div class="value"><a href="http://www.dermo-cosmeshop.co.kr/search?q=0%25%EB%B0%A9%EB%B6%80%EC%A0%9C%EC%B6%94%EC%B2%9C">0%방부제추천</a></div>
+                                    </li>
+
+                                <li class="ss-footer">
+                                    <p>닫기 <span class="icon-CLOSE"></span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <ul class="utility-links">
+                    <li class="your-dermo">
+                        <a href="/your-dermo-cosme-diag.html" class="link-cosme_diag" data-gtm-name="cosme diag">
+                            <span class="icon-MICROSCOPE_ROUND icon-yourdermo"></span>
+                            <span>피부 &amp; 헤어 진단</span>
+                        </a>
+                    </li>
+                    <li class="about-dermo">
+                        <a href="/about-dermo-cosmetics.html" data-gtm-name="about">
+                            <span class="icon-PICTO_ROUND icon-aboutdermo"></span>
+                            <span><span>About</span> 더모 코스메틱</span>
+                        </a>
+                    </li>
+                    <li class="my-account">
+                        <a href="/mypage" data-gtm-name="my account">
+                            <span class="icon-USER account-button"></span>
+                        </a>
+
+                        <div class="wrap_account">
+                            <h3 class="title_page">내 계정</h3>
+                            <div class="content-account">
+                                <div class="text-content-wrapper">
+                                    <p>로그인하시고 더 많은 혜택 받아보세요.</p>
+                                </div>
+                                <div class="wrap_button_login">
+                                    <a class="mobile-login-button" href="/login">로그인</a>
+                                    <a href="/register">회원가입</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart mini-cart">
+                        <a href="/cart" id="minicart-total-quantity">
+                            <span class="icon-CART minicart-button"></span>
+                            <span class="minicart-quantity">0</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <div class="main-nav-wrapper">
+            <nav class="clearfix">
+                <div class="wrap_nav">
+                    <div class="container">
+                    <ul class="menu-category level-1">
+                        <li class="category-menu has-child">
+                            <a class="has-sub-menu" href="javascript:void(0)">브랜드별</a>
+                            <span class="icon-PLUS icon_menu"></span>
+                            <div class="level-2">
+                                <div class="left-submenu-horizontal">
+                                    <h2 class="header-submenu">원하시는 브랜드를 선택하세요</h2>
+
+                                    <div class="row-submenu row-0" style="border-color: #ff8d7a">
+                                        <div class="title-submenu">아벤느<span class="icon-PLUS icon_menu_sub"></span></div>
+                                        <div class="description-brand">더마톨로지컬 엑스퍼트 아벤느</div>
+                                        <ul class="brand-attribute">
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/avene">
+                                                    브랜드 홈 바로가기
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/avene-products">
+                                                    전체 상품 보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row-submenu row-1" style="border-color: #8fc941">
+                                        <div class="title-submenu">르네휘테르<span class="icon-PLUS icon_menu_sub"></span></div>
+                                        <div class="description-brand">프랑스 프리미엄 두피&amp;헤어케어 르네휘테르</div>
+                                        <ul class="brand-attribute">
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/renefurterer">
+                                                    브랜드 홈 바로가기
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/renefurterer-products">
+                                                    전체 상품 보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row-submenu row-2" style="border-color: #00a650">
+                                        <div class="title-submenu">클로란<span class="icon-PLUS icon_menu_sub"></span></div>
+                                        <div class="description-brand">식물 과학이 만들어낸 클로란</div>
+                                        <ul class="brand-attribute">
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/klorane">
+                                                    브랜드 홈 바로가기
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/klorane-products">
+                                                    전체 상품 보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row-submenu row-3" style="border-color: #f4b1be">
+                                        <div class="title-submenu">듀크레이<span class="icon-PLUS icon_menu_sub"></span></div>
+                                        <div class="description-brand">문제성 피부 두피 전문가 듀크레이</div>
+                                        <ul class="brand-attribute">
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/ducray">
+                                                    브랜드 홈 바로가기
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/ducray-products">
+                                                    전체 상품 보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row-submenu row-4" style="border-color: #afa298">
+                                        <div class="title-submenu">아더마<span class="icon-PLUS icon_menu_sub"></span></div>
+                                        <div class="description-brand">연약한 피부를 위한 클리닉 전용 더모 코스메틱</div>
+                                        <ul class="brand-attribute">
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/aderma">
+                                                    브랜드 홈 바로가기
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.dermo-cosmeshop.co.kr/aderma-products">
+                                                    전체 상품 보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="right-submenu-horizontal">
+                                    <div id="product-brand" class="product-listing product-listing-1x3">
+                                        <h2 class="header-submenu">브랜드 베스트 상품</h2>
+
+                                        <div class="owl-carousel horizontal-carousel search-result-items tiles-container">
+                                            <div class="item grid-tile  item-0">
+
+
+                                                <div class="product-tile" id="9b3384b120182c2486105d00c7" data-itemid="524822"><!-- dwMarker="product" dwContentID="9b3384b120182c2486105d00c7" -->
+                                                    <!-- dwMarker="product" dwContentID="9b3384b120182c2486105d00c7" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #ff8d7a'>
+
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="오 떼르말">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x" alt="오 떼르말">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">아벤느</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 오 떼르말">오 떼르말</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="">#건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">300 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 23,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="524822">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="#" method="post" id="dwfrm_product_addtocart_d0dbshhsrkmj" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="524822">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+                                            </div>
+
+                                            <div class="item grid-tile  item-1">
+                                                <div class="product-tile" id="d77e091aaa040412e256015dfe"><!-- dwMarker="product" dwContentID="d77e091aaa040412e256015dfe" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #8fc941'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="포티샤 스티뮬레이팅 샴푸">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw7b4890a3/images/renefurterer/RENE-FURTERER-FORTICEA_Shampoo_600ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw7b4890a3/images/renefurterer/RENE-FURTERER-FORTICEA_Shampoo_600ml.jpg?sw=236&amp;sh=236 2x" alt="포티샤 스티뮬레이팅 샴푸">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">르네휘테르</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 포티샤 스티뮬레이팅 샴푸">포티샤 스티뮬레이팅 샴푸</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#두피케어 #샴푸 #두피딥클렌징 #실리콘프리 #샴푸추천 #지성샴푸 #가는모발</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">600 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 54,000</div>
+                                                        </div>
+
+                                                        <div class="product-review" data-pid="531005">
+                                                            <div class="rating"></div>
+                                                        </div>
+                                                        <form action="#" method="post" id="dwfrm_product_addtocart_d0iftgagiuca" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="531005">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+                                            </div>
+
+                                            <div class="item grid-tile  item-2">
+                                                <div class="product-tile" id="f0e47338ba6c1281b7db7ec4f2" data-itemid="531514"><!-- dwMarker="product" dwContentID="f0e47338ba6c1281b7db7ec4f2" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #00a650'>
+
+                                                        <div class="trend-award-wrapper">
+                                                            <div class="trend">
+                                                                -<img src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png" alt="new" title="new">
+                                                            </div>
+                                                        </div>
+
+                                                        <a class="product-image" href="#" title="석류 샴푸">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw0d291726/images/klorane/klorane_new/KLORANE-Pomegranate-Shampoo-200ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw0d291726/images/klorane/klorane_new/KLORANE-Pomegranate-Shampoo-200ml.jpg?sw=236&amp;sh=236 2x" alt="클로란 석류 샴푸 200ml">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">클로란</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 석류 샴푸">석류 샴푸</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#염색모발 #염색모발샴푸#염색보호샴푸 #석류추출물 #손상모발개선 #염색유지</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">200 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 18,000</div>
+                                                        </div>
+
+                                                        <div class="product-review" data-pid="531514">
+                                                            <div class="rating"></div>
+                                                        </div>
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0rtotfakjek" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="531514">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+                                            </div>
+
+                                            <div class="item grid-tile  item-3">
+                                                <div class="product-tile" id="e70afacf28bac48f4f97e047a9" data-itemid="533024"><!-- dwMarker="product" dwContentID="e70afacf28bac48f4f97e047a9" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #00a650'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="망고 샴푸">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw7e71a54b/images/klorane/klorane_new/KLORANE-Mango-Shampoo-400ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw7e71a54b/images/klorane/klorane_new/KLORANE-Mango-Shampoo-400ml.jpg?sw=236&amp;sh=236 2x" alt="클로란 망고 샴푸 400ml ">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">클로란</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 망고 샴푸">망고 샴푸</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#건성손상모발 #유럽No.1 #푸석푸석 #갈라지는모발끝  #영양 샴푸 #무파라벤 #무실리콘 #약산성</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">400 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 19,800</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="533024">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="#" method="post" id="dwfrm_product_addtocart_d0yubwxcshjv" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="533024">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+                                            </div>
+
+                                            <div class="item grid-tile  item-4">
+
+
+                                                <div class="product-tile" id="0b320add73204eefbf09a861c9"><!-- dwMarker="product" dwContentID="0b320add73204eefbf09a861c9" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #f4b1be'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="케라크닐 PP크림">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw0bb8db6a/images/ducray/DUCRAY-Keracnyl-PP-30ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw0bb8db6a/images/ducray/DUCRAY-Keracnyl-PP-30ml.jpg?sw=236&amp;sh=236 2x" alt="케라크닐 PP크림">
+                                                        </a>
+
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">듀크레이</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 케라크닐 PP크림">케라크닐 PP크림</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#SOS트러블크림 #176만입소문 #특허받은 #트러블케어성분 #케라크닐베스트셀러</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">30 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 35,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="519193">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0tnuzwloumh" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="519193">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+
+                                                </div><!-- END: .product-tile -->
+
+                                            </div>
+
+                                            <div class="item grid-tile  item-5">
+                                                <div class="product-tile" id="a533a654239eb45277b7b4ef91"><!-- dwMarker="product" dwContentID="a533a654239eb45277b7b4ef91" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #afa298'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="엑소메가 크림 D.E.F.I  [병원판매화장품]">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw82ba70e2/images/aderma/ADERMA-Emollient-cream-D.E.F.I-200ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw82ba70e2/images/aderma/ADERMA-Emollient-cream-D.E.F.I-200ml.jpg?sw=236&amp;sh=236 2x" alt="엑소메가 크림 D.E.F.I  [병원판매화장품]">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">아더마</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 엑소메가 크림 D.E.F.I  [병원판매화장품]">엑소메가 크림 D.E.F.I  [병원판매화장품]</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#0%방부제#밀폐용기#쫀쫀한피부#아이부터어른까지#피부장벽강화</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">200 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 36,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="515133">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="#" method="post" id="dwfrm_product_addtocart_d0tahhiwqnug" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="515133">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="category-menu has-child">
+                            <a class="has-sub-menu" href="javascript:void(0)">제품유형별</a>
+                            <span class="icon-PLUS icon_menu"></span>
+
+                            <div class="level-2">
+                                <ul class="left-submenu-vertical">
+                                    <li>
+                                        <h2 class="header-submenu">페이스</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">온천수 스프레이</a></li>
+                                            <li><a href="#">토너</a></li>
+                                            <li><a href="#">세럼 / 에멀전 / 로션</a></li>
+                                            <li><a href="#">크림 / 밤 </a></li>
+                                            <li><a href="#">마스크 / 팩 / 스틱</a></li>
+                                            <li><a href="#">클렌저 </a></li>
+                                            <li><a href="#">립 / 핸드</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="header-submenu">헤어</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">두피 전용 케어</a></li>
+                                            <li><a href="#">샴푸</a></li>
+                                            <li><a href="#">드라이 샴푸</a></li>
+                                            <li><a href="#">린스 / 컨디셔너</a></li>
+                                            <li><a href="#">헤어 마스크 / 팩</a></li>
+                                            <li><a href="#">헤어에센스 / 크림</a></li>
+                                            <li><a href="#">헤어 오일 / 미스트 스프레이</a></li>
+                                            <li><a href="#">헤어 젤 / 왁스 / 스타일링 스프레이 </a></li>
+                                            <li><a href="#">헤어전용 선케어</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="header-submenu">바디</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">크림 </a></li>
+                                            <li><a href="#">밤 / 오일 </a></li>
+                                            <li><a href="#">에멀전 / 로션 </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+
+                                        <h2 class="header-submenu">선케어</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">에멀전 / 플루이드</a></li>
+                                            <li><a href="#">크림 / 스틱</a></li>
+                                            <li><a href="#">헤어전용 선케어</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="header-submenu">베이비 / 패밀리</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">온천수 스프레이 </a></li>
+                                            <li><a href="#">에멀전 / 로션 / 크림</a></li>
+                                            <li><a href="#">밤 / 오일 </a></li>
+                                            <li><a href="#">선케어</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="right-submenu-vertical">
+                                    <div class="product-listing product-listing-1x2">
+                                        <h2 class="header-submenu">베스트 상품</h2>
+                                        <ul class="search-result-items tiles-container">
+                                            <li class="grid-tile">
+                                                <div class="product-tile" id="1816d6810675f0258c6936901b" data-itemid="520443"><!-- dwMarker="product" dwContentID="1816d6810675f0258c6936901b" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #ff8d7a'>
+                                                        <div class="trend-award-wrapper">
+                                                            <div class="trend">
+                                                                <img src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png" alt="new" title="new">
+                                                            </div>
+                                                        </div>
+
+                                                        <a class="product-image" href="#" title="NEW 시칼파트 블루젤 - 스킨 베이스">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=236&amp;sh=236 2x" alt="NEW 시칼파트 블루젤 - 스킨 베이스">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="http://www.dermo-cosmeshop.co.kr/avene-cicalfate-post-acte-skin-recovery-emulsion/520443.html">아벤느</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: NEW 시칼파트 블루젤 - 스킨 베이스">NEW 시칼파트 블루젤 - 스킨 베이스</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#에스테틱#손상개선크림#진정#홈케어</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">40 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 22,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="520443">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0gewefagucg" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="520443">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+
+                                                </div><!-- END: .product-tile -->
+
+                                            </li>
+                                            <li class="grid-tile">
+                                                <div class="product-tile" id="291913d72557d8162f2a6594a1" data-itemid="211351"><!-- dwMarker="product" dwContentID="291913d72557d8162f2a6594a1" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #00a650'>
+
+                                                        <div class="trend-award-wrapper">
+                                                            <div class="trend">
+                                                                <img src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png" alt="new" title="new">
+                                                            </div>
+                                                        </div>
+
+                                                        <a class="product-image" href="#" title="퀴닌 모근강화 2-Step 키트">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw228cce11/images/klorane/bundle-set/thumbnail_quinine_02.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw228cce11/images/klorane/bundle-set/thumbnail_quinine_02.jpg?sw=236&amp;sh=236 2x" alt="모근강화 2-Step 키트">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">클로란</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 퀴닌 모근강화 2-Step 키트">퀴닌 모근강화 2-Step 키트</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">퀴닌 케라틴 세럼 + 퀴닌 샴푸 100ml 증정</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label"></span>
+                                                            <span class="value"></span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-standard">₩ 28,000</div>
+                                                            <div class="price price-format-sale">₩ 22,400</div>
+                                                        </div>
+
+                                                        <div class="product-review" data-pid="211351">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0hmhkcupdaw" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="211351">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+
+                                                </div><!-- END: .product-tile -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="category-menu has-child">
+                            <a class="has-sub-menu" href="javascript:void(0)">피부 &amp; 헤어 타입별</a>
+                            <span class="icon-PLUS icon_menu"></span>
+
+
+                            <div class="level-2">
+                                <ul class="left-submenu-vertical">
+                                    <li>
+
+                                        <h2 class="header-submenu">피부 타입</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+
+                                        <ul class="level-3">
+                                            <li>
+                                                <a href="#">전체보기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">민감한 피부</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">매우 건조한 피부</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">건조한 피부</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">지복합성 / 트러블 피부</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">자극받고 손상된 피부 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">모든 타입의 피부</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h2 class="header-submenu">헤어 타입</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li><a href="#">전체보기</a></li>
+                                            <li><a href="#">힘없고 가는 모발 </a></li>
+                                            <li><a href="#">민감한 두피</a></li>
+                                            <li><a href="#">손상된 모발</a></li>
+                                            <li><a href="#">건조한 두피 / 모발</a></li>
+                                            <li><a href="#">염색 모발</a></li>
+                                            <li><a href="#">윤기없는 모발</a></li>
+                                            <li><a href="#">볼륨없이 처지는 모발</a></li>
+                                            <li><a href="#">지성 두피 / 모발</a></li>
+                                            <li><a href="#">부스스한 모발</a></li>
+                                            <li><a href="#">모든 타입의 두피/모발</a></li>
+                                            <li><a href="#">비듬성 두피</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h2 class="header-submenu">베이비 / 패밀리</h2>
+                                        <span class="icon-PLUS icon_menu_sub"></span>
+                                        <ul class="level-3">
+                                            <li>
+                                                <a href="#">전체보기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">민감한 피부 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">매우 건조한 피부 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">건조한 피부 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">자극받고 손상된 피부 </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">모든 타입의 피부 </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="right-submenu-vertical">
+                                    <div class="product-listing product-listing-1x2">
+                                        <h2 class="header-submenu">베스트 상품</h2>
+                                        <ul class="search-result-items tiles-container">
+                                            <li class="grid-tile">
+                                                <div class="product-tile" id="92448de01b81b1bf0a47d6f45d" data-itemid="517868"><!-- dwMarker="product" dwContentID="92448de01b81b1bf0a47d6f45d" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #afa298'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="더말리부+ SOS 구리-아연 크림 [병원판매화장품]">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw043967bb/images/aderma/ADERMA-Dermalibour+-Repairing-cream-50ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw043967bb/images/aderma/ADERMA-Dermalibour+-Repairing-cream-50ml.jpg?sw=236&amp;sh=236 2x" alt="더말리부+ SOS 구리-아연 크림 [병원판매화장품]">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">아더마</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 더말리부+ SOS 구리-아연 크림 [병원판매화장품]">더말리부+ SOS 구리-아연 크림 [병원판매화장품]</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#과민감#예민보스#진정#손상개선#SOS#피부장벽강화</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">50 ml</span>
+                                                        </span>
+
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 20,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="517868">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0fgpfpohxmk" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="517868">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+
+                                                </div><!-- END: .product-tile -->
+
+                                            </li>
+
+                                            <li class="grid-tile">
+                                                <div class="product-tile" id="9473cc98984673f9a4c33321e5" data-itemid="526097"><!-- dwMarker="product" dwContentID="9473cc98984673f9a4c33321e5" -->
+                                                    <div class="product-image-wrapper"  style='border: 1px solid #00a650'>
+                                                        <div class="trend-award-wrapper"></div>
+                                                        <a class="product-image" href="#" title="베베 헤어&amp;바디 워시">
+                                                            <img class="product-picture" srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw09b687ae/images/klorane/klorane_new/KLORANE-Baby-Hair-&amp;-Body-Wash-500ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dw09b687ae/images/klorane/klorane_new/KLORANE-Baby-Hair-&amp;-Body-Wash-500ml.jpg?sw=236&amp;sh=236 2x" alt="베베 헤어&amp;바디 워시 500ml">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="product-info">
+                                                        <h5 class="product-brand">
+                                                            <a href="#">클로란</a>
+                                                        </h5>
+                                                        <h4 class="product-name">
+                                                            <a class="name-link link-more" href="#" title="Go to Product: 베베 헤어&amp;바디 워시">베베 헤어&amp;바디 워시</a>
+                                                        </h4>
+                                                        <p class="product-description">
+                                                            <a href="#">#베이비워시 #탑투토 #샤워 #무파라벤 #무설페이트 #무색소 #약산성 #눈에들어가도따갑지않는 #저자극클렌저</a>
+                                                        </p>
+                                                        <span class="product-variant">
+                                                            <span class="label">용량</span>
+                                                            <span class="value">500 ml</span>
+                                                        </span>
+                                                        <div class="wrap_price">
+                                                            <div class="price price-format-sale">₩ 32,000</div>
+                                                        </div>
+                                                        <div class="product-review" data-pid="526097">
+                                                            <div class="rating"></div>
+                                                        </div>
+
+                                                        <form action="/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Cart-AddProduct" method="post" id="dwfrm_product_addtocart_d0midkllgipo" class="pdpForm wrap-button-cart">
+                                                            <input type="hidden" name="cartAction" value="add">
+                                                            <input type="hidden" name="pid" value="526097">
+                                                            <a href="#" title="자세히 보기" value="자세히 보기" class="button-fancy-large add-to-cart">자세히 보기</a>
+                                                        </form>
+                                                    </div>
+                                                </div><!-- END: .product-tile -->
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="category-menu ">
+                            <a class="" href="#">베스트</a>
+                            <span class="icon-PLUS icon_menu"></span>
+                        </li>
+                        <li class="category-menu ">
+                            <a class="" href="#">세일</a>
+                            <span class="icon-PLUS icon_menu"></span>
+                        </li>
+                        <li class="category-menu ">
+                            <a class="" href="#">이벤트</a>
+                            <span class="icon-PLUS icon_menu"></span>
+                        </li>
+                        <li class="category-menu ">
+                            <a class="" href="#">신상품</a>
+                            <span class="icon-PLUS icon_menu"></span>
+                        </li>
+                    </ul>
+
+                    <div class="brands-logos">
+                        <div class="content-asset">
+                            <ul class="brands_logos_1">
+                                <li>
+                                    <a href="#">
+                                        <img alt="pfdc avene logo" src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw8919da9b/menu-brands-logos/avene.png" title="pfdc avene logo" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img alt="pfdc furterer logo" src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw491c4337/menu-brands-logos/furterer.png" title="pfdc furterer logo" />
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="brands_logos_2">
+                                <li>
+                                    <a href="#">
+                                        <img alt="pfdc klorane logo" src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw6456c631/menu-brands-logos/klorane.png" title="pfdc klorane logo" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dermo-cosmeshop.co.kr/ducray">
+                                        <img alt="pfdc ducray logo" src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw200c9e09/menu-brands-logos/ducray.png" title="pfdc ducray logo" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dermo-cosmeshop.co.kr/aderma">
+                                        <img alt="pfdc aderma logo" src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw8b92e754/menu-brands-logos/aderma.png" title="pfdc aderma logo" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- container END -->
+            </div>
+            <!-- wrap_nav END -->
+        </nav>
+    </div>
+    <!-- main-nav-wrapper END -->
+
+
+    <div class="mobile-top-menu-wrapper">
+        <div class="mobile-top-menu-inner">
+            <ul class="hide-on-desktop menu-top mobile-top-menu clearfix">
+                <li><a class="item" href="https://www.dermo-cosmeshop.co.kr/best">베스트</a></li>
+                <li><a class="item" href="https://www.dermo-cosmeshop.co.kr/sales">세일</a></li>
+                <li><a class="item" href="http://www.dermo-cosmeshop.co.kr/events">이벤트</a></li>
+                <li><a class="item" href="https://www.dermo-cosmeshop.co.kr/new">신상품</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    </div>
+    <!-- menu-scroll-bar END -->
+</div>
+<!-- HEADER END -->

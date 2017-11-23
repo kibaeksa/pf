@@ -1,0 +1,27 @@
+script(type="text/javascript").
+    (function(){
+        window.Resources = {"SIMPLE_SEARCH":"키워드로 검색해보세요","DELETE_ADDRESS_CONFIRMATION":"정말로 해당 주소를 삭제 하시겠습니까?","ORDER_RETURN_CONFIRMATION":"정말로 이 주문을 반품 하시겠습니까?","ORDER_CANCEL_CONFIRMATION":"이 주문을 취소 하시겠습니까?","UNREGISTRATION_CONFIRMATION":"등록 취소 절차를 확인 하시겠습니까?","UNREGISTRATION_IMPOSSIBLE":"주문이 아직 진행 중이므로 잠시 등록 취소를 할 수 없습니다.","PASSWORD_CHANGED":"비밀번호가 수정 되었습니다.","INVALID_POINT_INPUT":"포인트를 정확하게 입력해주세요.","INVALID_USERNAME":"영/숫자 6~15자로 입력하셔야 합니다","REGISTER_CONFIRMATION_MESSAGE":"<p>회원 부가 정보가 입력완료 되었습니다.</p><p>나의 회원정보는 마이페이지에서 수정 가능합니다.</p>","PASSWORD_VALUE_ERROR":"가이드에 맞게 비밀번호를 생성해주세요.","INVALID_EMAIL_INPUT":"정확한 이메일 주소를 입력해 주세요.","INVALID_CELLPHONE_INPUT":"정확한 휴대전화 번호를 입력해 주세요.","EXISTING_ADDRESSID":"해당 주소는 이미 주소록에 저장되어 있습니다.","REQUIRED_SMS_OR_EMAIL":"SMS 또는 이메일 옵션을 선택하십시오."};
+        window.Urls = {"notifyMe":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Product-NotifyMe","getAvailability":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Product-GetAvailability","restoreBasketJson":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Product-RestoreBasketJson","handleChangeCoupon":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Product-HandleChangeCoupon","searchsuggest":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Search-GetSuggestions","checkCouponBeforeApply":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Coupon-CheckCouponBeforeApply","addCoupon":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Coupon-AddCoupon","removeCoupon":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Coupon-RemoveCoupon","addPointRedeem":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/ClutchGiftCert-CreateClutchPIJson","removePoint":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/ClutchGiftCert-RemovePoint","useAllPoint":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/ClutchGiftCert-UseAllPoint","checkUsername":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Account-CheckUsernameJson","openPopinPopupAuth":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Login-PopinPopupAuth","buyNow":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/BuyNow-Start","showTerm":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Account-ShowTerm","loginShow":"/login","addressList":"/addresses","couponApply":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Coupon-CouponApply","handleCouponApply":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Coupon-HandleCouponApply","getStoresJson":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Stores-GetStores","markerImg":"/on/demandware.static/Sites-PFDC-KR-Site/-/default/dwa48fb8f0/images/icon-marker.png","clinicSelect":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/COCheckout-ClinicSelect","activeAccount":"/on/demandware.store/Sites-PFDC-KR-Site/ko_KR/Login-SetEnableAccount"};
+        window.Preferences = {"carrouselTime":5000,"isNiceIdEnabled":true,"powerReviewsEnabled":true,"powerReviewsGroupId":"49566","powerReviewsMerchantId":"560451","powerReviewsDefaultLocale":"ko_KR","powerReviewsApiKey":"5a8994e8-bfb6-49af-a964-025c428eb215"};
+    }());
+    
+    
+    <!-- transient resources -->
+    (function(){
+        window.UserSettings = {"connexion-status":"Unlogged","Membership-level":"N/A","user-id":"N/A","email":""};
+        window.UserName = "";
+    }());
+    
+script(type="text/javascript",src="/assets/js/vendor.js")
+script(type="text/javascript",src="/assets/js/common.js")
+script(type="text/javascript",src="/assets/js/content.js")
+script(type="text/javascript",src="/assets/js/local.js")
+
+script.
+    window.addEventListener('DOMContentLoaded' , () => {
+        renderHTML('.header .menu-scroll-bar .top-header .content-asset' , `#{customerCenterHeader}`);        
+        renderHTML('.footer .footer-info .content-asset' , `#{footerCallCenterInfo}`);
+        renderHTML('.footer .nav-list .content-asset' , `#{footerLinkRefer}`);
+        renderHTML('.footer .info-list .content-asset' , `#{footerCompanyInformation}`);
+        renderHTML('.footer .copy-right .content-asset' , `#{footerCopyright}`);
+    });

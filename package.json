@@ -1,0 +1,22 @@
+{
+  "name": "pf_modules",
+  "version": "1.0.0",
+  "description": "PF module for maintaining project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "SANTELGLOBAL",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.4",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "html2pug": "^2.0.1"
+  }
+}

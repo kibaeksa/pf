@@ -1,0 +1,467 @@
+<style>
+    .product-view-170518 .article{
+        border-bottom: 1px solid  #aaa;
+    }
+
+    .product-view-170518 .article.a01{
+        border-bottom-color: #3fc4df;
+    }
+
+    .product-view-170518 .article.a01 h2{
+        margin: 0;
+        padding: 0 20px 0;
+        text-align: center;
+        color: #40c3e4;
+        font: 70px/70px 'Noto Sans KR Bold';
+        letter-spacing: -0.5px;
+    }
+
+    .product-view-170518 .article.a01 h2 span{
+        margin: 0 20px;
+        color: #666;
+        font-family: 'Noto Sans KR Light';
+    }
+
+    .product-view-170518 .article.a01 .desc{
+        margin: 25px 0 100px;
+        text-align: center;
+        color: #0164b2;
+        font: 42px/42px 'Noto Sans KR Regular';
+        letter-spacing: -0.5px;
+    }
+
+    .product-view-170518 .article.no_line{
+        border-bottom-width: 0;
+    }
+
+    .product-view-170518 .a01-1 .con_left{
+        text-align: left;
+        min-height: auto;
+    }
+
+
+    #tab-detailed-info .product-view-170518 .a01-1 .con_left img{
+        display: inline;
+    }
+
+    .product-view-170518 .a01-1 .con_left.ingredient_desc{
+        /*width: 500px;*/
+        padding-left: 0;
+    }
+
+    .ingredient_desc h3{
+        margin: 0 0 20px 0 !important;
+        font: 50px/50px 'Noto Sans KR Medium' !important;
+        color: #0164b2 !important;
+        letter-spacing: -0.75px !important;
+        text-align: left !important;
+    }
+
+    .ingredient_desc h3 span{
+        display: block;
+        font-size: 20px;
+        font-family: 'Noto Sans KR Light';
+        color: #aaa;
+        letter-spacing: -0.25px;
+    }
+
+    .ingredient_desc ul li{
+        min-height: 50px;
+        padding-left: 70px;
+        margin-bottom: 45px;
+        background:url('DU/ingredient/ico_blue_check.jpg?$staticlink$') 0 0 no-repeat;
+    }
+
+    .ingredient_desc ul.items-3 li{
+        margin-bottom: 60px;
+    }
+
+    .ingredient_desc ul li>*{
+        text-align: left;
+    }
+
+    .ingredient_desc ul li dt{
+        margin-bottom: 10px;
+        font: 22px/22px 'Noto Sans KR Medium';
+        color: #3fc4df;
+        letter-spacing: -0.5px;
+    }
+
+    .ingredient_desc ul li dd{
+        margin: 0;
+        font: 18px/18px 'Noto Sans KR Light';
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+    .article.a08 h3{
+        margin: 0;
+        font: 60px/65px 'Noto Sans KR Regular';
+        color: #444;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .article.a08 h3 span{
+        font-size: 50px;
+        font-family: 'Noto Sans KR Light';
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip{
+        width: 485px;
+        margin-right: 20px;
+        padding: 0;
+        background: none;
+        background-position: 0 bottom;
+        background-repeat: no-repeat;
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip.tip1{
+        background-image:url('DU/a08/a08_210747_tip1_bg.jpg?$staticlink$');
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip.tip2{
+        background-image:url('DU/a08/a08_210747_tip2_bg.jpg?$staticlink$');
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip h3{
+        margin: 0;
+        height: 40px;
+        color: #fff;
+        background: #00adef;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip .contents{
+        margin: 0;
+        padding: 30px 0;
+        padding-left: 200px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip .contents h4{
+        margin:0 0 15px 0;
+        height: 65px;
+        padding: 0;
+        color: #444;
+        font:26px/30px 'Noto Sans KR Light';
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip .contents dl{
+        margin: 0;
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip .contents dt{
+        margin-bottom: 10px;
+        font:22px/22px 'Noto Sans KR Medium';
+        color: #00adef;
+    }
+
+    .product-view-170518 .article.a08 .a08_box_tip .contents dd{
+        margin: 0;
+        font:16px/22px 'Noto Sans KR Regular';
+        color: #777;
+    }
+
+    /* Tablet PC */
+    @media screen and (max-width: 1020px) and (min-width: 768px){
+        .product-view-170518 .article.a01 h2{
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        .product-view-170518 .article.a01 .desc{
+            margin-top: 10px;
+            margin-bottom: 60px;
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        .product-view-170518 .a01-1 .ingredient_img{
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 0;
+            float: none;
+            text-align: center;
+        }
+
+        .product-view-170518 .a01-1 .ingredient_desc{
+            float: none;
+            width: 100%;
+        }
+
+        .product-view-170518 .a01-1{
+            margin-top: 50px !important;
+        }
+
+        .ingredient_desc h3{
+            font: 36px/36px 'Noto Sans KR Medium' !important;
+        }
+
+        .ingredient_desc h3 span{
+            font-size: 18px;
+        }
+
+        .ingredient_desc ul li{
+            padding-left: 60px;
+            min-height: 40px;
+            margin-bottom: 30px !important;
+            -webkit-background-size: 40px auto;
+            background-size: 40px auto;
+        }
+
+        .ingredient_desc ul li dt{
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+
+        .ingredient_desc ul li dd{
+            font-size: 14px;
+        }
+
+        .article.a08 h3{
+            margin-bottom: 50px;
+            font-size: 46px;
+            line-height: 50px;
+        }
+
+        .article.a08 h3 span{
+            font-size: 40px;
+        }
+
+        .product-view-170518 .article.a08 .a08_tip{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip{
+            width: 100%;
+            float: none;
+        }
+    }
+
+    /* Mobile */
+    @media screen and (max-width: 767px){
+
+        .product-view-170518 .article.a01{
+            padding: 0;
+            margin-top: 0 !important;
+            border-bottom-width: 0;
+        }
+        .product-view-170518 .article.a01 h2{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        .product-view-170518 .article.a01 h2 span{
+            margin: 0 10px;
+        }
+
+        .product-view-170518 .article.a01 .desc{
+            font-size: 16px;
+            line-height: 22px;
+            margin:10px 0 20px;
+            text-align: center;
+            color: #0164b2;
+        }
+
+        .product-view-170518 .a01-1{
+            display: block;
+        }
+
+        .product-view-170518 .a01-1 .con_left,
+        .product-view-170518 .a01-1 .con_right{
+            width: 100%;
+            float: none;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            text-align: center;
+        }
+
+        .product-view-170518 .a01-1 .con_left img,
+        .product-view-170518 .a01-1 .con_right img{
+            width: 50%;
+        }
+
+        .product-view-170518 .a01-1{
+            padding: 0 20px;
+        }
+
+        .product-view-170518 .a01-1 .ingredient_desc h3{
+            font-size: 20px !important;
+            line-height: 20px !important;
+        }
+
+        .product-view-170518 .a01-1 .ingredient_desc h3 span{
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .ingredient_desc ul li{
+            min-height: 35px;
+            margin-bottom: 20px !important;
+            padding-left: 50px;
+            -webkit-background-size: 35px auto;
+            background-size: 35px auto;
+        }
+
+        .ingredient_desc ul li dt{
+            margin-bottom: 5px;
+            font: 14px/14px 'Noto Sans KR Medium';
+            letter-spacing: -0.5px;
+        }
+
+        .ingredient_desc ul li dd{
+            font-size: 14px;
+        }
+
+        .article.a08 h3{
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .article.a08 h3 span{
+            font-size: 24px;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip{
+            width: 100%;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip{
+            -webkit-background-size: 130px auto;
+            background-size: 130px auto;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip .contents{
+            padding:15px 0 15px 150px;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip .contents h4{
+            margin-bottom: 10px;
+            height: 47px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip .contents dt{
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .product-view-170518 .article.a08 .a08_box_tip .contents dd{
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+</style>
+
+<div class="product-view-170518">
+    <div class="article a01">
+        <div class="mobile-hidden">
+            <h2>듀크레이 보습 크림<span>X</span>립밤 세트</h2>
+            <p class="desc">한 번 사용으로도 오랫동안 촉촉하게 케어하세요!</p>
+            <img alt="망고 성분" src="DU/a01/DU_210747_visual.jpg?$staticlink$" />
+        </div>
+        <div class="pc-hidden">
+            <img src="DU/a01/DU_210747_visual-m.jpg?$staticlink$" alt="" style="width:100%;">
+        </div>
+    </div>
+
+    <div class="article a01-1 no_line">
+        <div class="con_left ingredient_img"><img alt="망고 성분" src="DU/ingredient/DU_210747_01.jpg?$staticlink$" /></div>
+        <div class="con_right ingredient_desc">
+            <h3>케라크닐 리페어 크림<span>#장벽보호크림#0%방부제#48시간보습#속당김</span></h3>
+            <ul class="items-4">
+                <li>
+                    <dl>
+                        <dt>0% 방부제 꼭 필요한 성분만</dt>
+                        <dd>건조해진 피부에 순한 보습</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>하이드록시데신</dt>
+                        <dd>피부 장벽 강화, 피부 수분 증발 보호</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>비타민 F & 글리세린 함유 </dt>
+                        <dd>수분 및 영양 공급   </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>특허 받은 멸균용기 D.E.F.I</dt>
+                        <dd>방부제 없이도 제품 포뮬라가 유지될 수 있는 용기 사용 </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="article a01-1 ingredient_wrapper2">
+        <div class="con_right ingredient_img"><img alt="망고 성분" src="DU/ingredient/DU_210747_02.jpg?$staticlink$" /></div>
+        <div class="con_left ingredient_desc">
+            <h3>익띠안 립밤<span>#악건성입술#촉촉#고보습#피부보호막</span></h3>
+            <ul class="items-3">
+                <li>
+                    <dl>
+                        <dt>글리세린</dt>
+                        <dd>수분을 머금은 스펀지 형태로 피부 각질층 곳곳에 수분을 공급 </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>바세린</dt>
+                        <dd>피부 보호막을 형성</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>비타민 복합체 </dt>
+                        <dd>손상된 입술을 매끄럽게 보호 </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="article a08 no_line">
+        <h3>민감성 피부케어 & 보습케어를 한번에!<br/><span>함께 사용해 보세요!</span></h3>
+        <div class="contents">
+
+            <div class="a08_tip clearfix">
+                <div class="a08_box_tip tip1">
+                    <h3>BEAUTY TIP 01</h3>
+                    <div class="contents">
+                        <h4>무너진 피부장벽으로 인해 건조하고 민감해진 피부</h4>
+                        <dl>
+                            <dt>듀크레이 케라크닐 리페어 크림</dt>
+                            <dd>보습력이 48시간* 지속되는 방부제 0%의 순한 보습 장벽 크림</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="a08_box_tip tip2">
+                    <h3>BEAUTY TIP 02</h3>
+                    <div class="contents">
+                        <h4>건조하고 메마른 입술</h4>
+                        <dl>
+                            <dt>듀크레이 익띠안 고보습 립밤</dt>
+                            <dd>글리세린과 바세린의 배합으로 촉촉함이 오래 가는 끈적이지 않는 사용감의 고보습 립밤  </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

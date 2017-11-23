@@ -1,0 +1,57 @@
+<style type="text/css">
+    .brand-description{
+        position: relative;
+        height: 500px;
+        background:url('Brand_main/bg-brand_desc_aderma.jpg?$staticlink$') 0 0 no-repeat;
+    }
+
+    .brand-description .main-info-wrapper{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .brand-description .main-info-wrapper .main-info{border:2px solid #afa298; height: 462px;}
+    .brand-description .main-info > p{font-family: 'Noto Sans KR Light'; font-size:14px; color:#786e63;}
+    .brand-description .main-info .list-style p{font-family: 'Noto Sans KR Light'; font-size:11px; color:#786e63;position:absolute; left:30px; bottom:20px; letter-spacing: -0.05px;}
+
+@media screen and (max-width:767px) {
+    .brand-description .main-info-wrapper .main-info{padding ; 30px;}
+    .brand-wrapper .brand-description .main-info p{
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+   .brand-description .list-style li a {padding: 0 5px;}
+   .brand-description .main-info .list-style p{font-size:10px; left:50%; bottom:10px; margin-left:-134px;}
+   .brand-description .main-info .list-style p span{display: block;}
+}
+</style>
+
+
+
+<div class="container">
+    <div class="brand-information">
+        <div class="brand-section brand-description">
+            <div class="main-info-wrapper">
+                <div class="main-info">
+                    <h2 class="img-logo" style="margin-top:0; margin-bottom:30px;">
+                        <picture>
+                            <source srcset="Brand_main/AD_logo.png?$staticlink$" media="(min-width: 769px)">
+                            <img srcset="Brand_main/AD_logo.png?$staticlink$" alt="A derma Logo" title="A derma">
+                        </picture>
+                    </h2>
+                    <p>아더마는 프랑스 극건성 케어 판매 1위* 브랜드로서 연약한 피부를 위한 더모코스메틱 브랜드 입니다. 유럽 피부과 학회지 JEADV 국제 의학 저널에 논문 게재등 연구로 확인된 활성 성분과 제품의 뛰어난 효능으로 한국에서는 지정된 병의원을 통해 만나보실 수 있습니다.</p>
+                    <ul class="list-style">
+                        <li><a href="$httpUrl('Search-Show', 'cgid', 'aderma')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#786e63; ">제품 전체보기</a></li>
+                        <li><a href="$url('Page-Show','cid','about-aderma')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#786e63; ">브랜드 스토리</a></li>
+                        <li><a href="$url('Search-ShowContent','fdid','videoshoppage')$#a-derma" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#786e63; ">비디오 샵</a></li>
+                         <p><span>*1위 자료출처: IMS 프랑스 2013-2015 데이터 기준</span><span>극건성 케어 화장품 판매 1위<span></p>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="image-full"><img alt="" src="Brand_main/AD_info.jpg?$staticlink$" title="" /></div> -->
+        </div>
+    </div>
+</div>

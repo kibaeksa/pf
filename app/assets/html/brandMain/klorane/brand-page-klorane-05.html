@@ -1,0 +1,55 @@
+<style type="text/css">
+    .brand-description{
+        position: relative;
+        height: 500px;
+        background:url('Brand_main/bg-brand_desc_kl.jpg?$staticlink$') 0 0 no-repeat;
+    }
+
+    .brand-description .main-info-wrapper{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .brand-description .main-info-wrapper .main-info{border: 0 none; background: rgba(255, 255, 255, 0.9); padding-top:63px; height: 462px;}
+    .brand-description .main-info > p{font-family: 'Noto Sans KR Light'; font-size:14px; color:#04603f;}
+
+@media screen and (max-width:767px) {
+    .brand-description .main-info-wrapper .main-info{padding ; 30px;}
+    .brand-wrapper .brand-description .main-info p{
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+   .brand-description .list-style li a {padding: 0 5px;}
+}
+</style>
+
+
+<div class="container">
+    <div class="brand-information">
+        <div class="brand-section brand-description">
+            <div class="main-info-wrapper">
+                <div class="main-info" style="">
+                    <h2 class="img-logo" style="margin-top:0; margin-bottom:30px;">
+                        <picture>
+                            <source srcset="Brand_main/KL_logo.png?$staticlink$" media="(min-width: 769px)">
+                            <img srcset="Brand_main/KL_logo.png?$staticlink$" alt="klorane Logo" title="klorane">
+                        </picture>
+                    </h2>
+                    <p>클로란은 지난 50년간 식물의 효능에 대한 연구를 바탕으로 효과적인 제품을 개발해 왔습니다.
+다양한 상태의 모발과 피부에 맞는 최적화된 식물 추출물을 사용하고 자연과의 조화를 중요하게 생각합니다.
+클로란은 식물학의 순수한 힘을 바탕으로 뛰어난 제품들을 만들어 냅니다.</p>
+                    <ul class="list-style">
+                        <li><a href="$httpUrl('Search-Show', 'cgid', 'klorane')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#04603f; ">제품 전체보기</a></li>
+                        <li><a href="$url('Page-Show','cid','about-klorane')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#04603f; ">브랜드 스토리</a></li>
+                        <li><a href="$url('Search-ShowContent','fdid','videoshoppage')$#klorane" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#04603f; ">비디오 샵</a></li>
+                         <p></p>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="image-full"><img alt="" src="Brand_main/AD_info.jpg?$staticlink$" title="" /></div> -->
+        </div>
+    </div>
+</div>

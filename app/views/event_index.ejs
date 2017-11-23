@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include ../includes/headdata.ejs %>
+    </head>
+    <body data-layer="{"content type":"Content pages","site":"Korea_W","currencyCode":"KRW"}">
+        <div id="wrapper" class="event-general">
+            <%- include ../includes/header.ejs %>
+            <div class="inner-content-wrapper">
+
+                <section class="breadcrumb-container breadcrumb-event container">
+                    <ol>
+                        <li>
+                            <a class="breadcrumb-element" href="#" style="text-transform:uppercase;font-size:14px;">Events</a>
+                        </li>
+                        <li>
+                            <span class="breadcrumb-element" style="text-transform:uppercase;font-size:14px;"><%-eventName%></span>
+                        </li>
+                    </ol>
+                </section>
+                <div class="container-big event-read-page">
+                    <div class="container">
+                        <div class="pfdc-form other-events">
+                        	<div class="field-box">
+                        		<div class="input-wrapper">
+                        			<div class="wrapper-inner clearfix">
+                        				<div class="input-box">
+                        					<div class="dropdown-select">
+                        						<div class="custom-select">이벤트 보러가기</div>
+                        						<select class="input-select select-other-events" id="select-other-events">
+                                                    <option class="select-option" value="">No value</option>
+                        						</select>
+                        					</div>
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                        <%# pfdc-form other-events END %>
+
+                        <div class="event-content">
+                            <div class="content-asset">
+                                <%- eventData %>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <%- include ../includes/footer.ejs %>
+            </div>
+        </div>
+        <%- include ../includes/footer_script.ejs %>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    .mobile-hidden{display: block;}
+    .pc-hidden{display: none;}
+
+    .mobile-hidden img{display: block;}
+
+    #wrapper{background: #f6f6f6;}
+
+    .newMember-wrap{width: 990px; margin: 0 auto;}
+    .newMember-wrap .newmember-nav{background: #000; padding: 15px 100px 15px;}
+    .newMember-wrap .newmember-nav ul{overflow: hidden; display: table; width: 100%; list-style: none; margin: 0;}
+    .newMember-wrap .newmember-nav ul li{float: left; display: table-cell; width: 25%; text-align: center; vertical-align: middle;}
+    .newMember-wrap .newmember-nav ul li:hover{}
+    .newMember-wrap .newmember-nav ul li:hover a{color: #31bab6;}
+    .newMember-wrap .newmember-nav ul li:hover a span{background: #31bab6;}
+    .newMember-wrap .newmember-nav ul li a{font-family: 'Noto Sans KR Light'; font-size: 18px; font-weight: 300; color: #fff; text-decoration: none;}
+    .newMember-wrap .newmember-nav ul li a span{display: inline-block; width: 19px; height: 19px; border-radius: 50%; background: #fff; color: #000; text-align: center; line-height: 19px; font-size: 14px; margin-right: 10px;}
+
+
+    @media only screen and (max-width: 767px) {
+        .mobile-hidden{display: none;}
+        .pc-hidden{display: block;}
+
+        .pc-hidden > div{overflow: hidden; position: relative;}
+        .pc-hidden > div img{display: block; width: 100%;}
+        .pc-hidden div a{text-indent: -1000px;}
+
+        #wrapper{background: none;}
+
+        .newMember-wrap{width: 100%;}
+        .newMember-wrap .newmember-nav{padding: 15px;}
+        .newMember-wrap .newmember-nav ul{height: 20px; margin: 0; padding: 0;}
+        .newMember-wrap .newmember-nav ul li{height: 20px;}
+        .newMember-wrap .newmember-nav ul li:hover{border-bottom: none;}
+        .newMember-wrap .newmember-nav ul li a{font-size: 12px;}
+        .newMember-wrap .newmember-nav ul li a span{width: 6px; height: 6px; line-height: 6px; font-size: 8px; margin-right: 5px;}
+    }
+    .dn{display: none;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        function fnMove(seq){
+            var offset = $("#newmember-" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 400);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="newMember-wrap">
+
+        <div class="mobile-hidden">
+            <div class="newmember-nav">
+                <ul>
+                    <li><a href="#" onclick="fnMove('1');"><span>01</span>가입 즉시 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('2');"><span>02</span>구매 즉시 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('3');"><span>03</span>멤버쉽 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('4');"><span>04</span>리뷰 작성 혜택</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="events/event-7/PF_newmember_02.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-1">
+                <img src="events/event-7/PF_newmember_03.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-2">
+                <img src="events/event-7/PF_newmember_04.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-3">
+                <img src="events/event-7/PF_newmember_05.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-4">
+                <img src="events/event-7/PF_newmember_06.jpg?$staticlink$" alt="">
+            </div>
+            <div>
+                <a href="https://www.dermo-cosmeshop.co.kr/register">
+                    <img src="events/event-7/PF_newmember_07.jpg?$staticlink$" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="pc-hidden">
+            <div class="newmember-nav">
+                <ul>
+                    <li><a href="#" onclick="fnMove('5');"><span>01</span>가입 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('6');"><span>02</span>구매 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('7');"><span>03</span>멤버쉽 혜택</a></li>
+                    <li><a href="#" onclick="fnMove('8');"><span>04</span>리뷰 혜택</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="events/event-7/PF_newmember_m_02.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-5">
+                <img src="events/event-7/PF_newmember_m_03.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-6">
+                <img src="events/event-7/PF_newmember_m_04.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-7">
+                <img src="events/event-7/PF_newmember_m_05.jpg?$staticlink$" alt="">
+            </div>
+            <div id="newmember-8">
+                <img src="events/event-7/PF_newmember_m_06.jpg?$staticlink$" alt="">
+            </div>
+            <div>
+                <a href="https://www.dermo-cosmeshop.co.kr/register">
+                    <img src="events/event-7/PF_newmember_m_07.jpg?$staticlink$" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

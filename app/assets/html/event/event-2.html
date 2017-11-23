@@ -1,0 +1,93 @@
+<style>
+.mobile-hidden{display: block;}
+.pc-hidden{display: none;}
+
+.mobile-hidden img{display: block;}
+@media only screen and (max-width: 767px) {
+    .mobile-hidden{display: none;}
+    .pc-hidden{display: block;}
+
+    .pc-hidden > div{overflow: hidden; position: relative;}
+    .pc-hidden > div img{display: block;}
+    .pc-hidden div a{text-indent: -1000px;}
+    .section_m_02 .btn_with_box a{display: inline-block; position: absolute; width: 38.6666%; height: 6.6334%;}
+    .section_m_05 .btn_with_box a{display: inline-block; position: absolute; width: 78.6666%; height: 23.1481%;}
+    .section_m_05 .btn_with_box a:nth-child(1){top:16.0185%; left:10.6666%;}
+    .section_m_05 .btn_with_box a:nth-child(2){top:43.0555%; left:10.6666%;}
+    .section_m_05 .btn_with_box a:nth-child(3){top:71.0185%; left:10.6666%;}
+}
+</style>
+
+<div class="event-image">
+    <div class="mobile-hidden">
+        <div>
+            <img src="events/av_promotion_01-01.jpg?$staticlink$" alt="" usemap="#event-2-01" border="0">
+        </div>
+        <div>
+            <img src="events/av_promotion_02.jpg?$staticlink$" alt="" usemap="#event-2-02" border="0">
+            <map name="event-2-02" id="event-2-02">
+                <!--<area class="coupon-button-01 download-coupon-event" shape="rect" coords="180,588,480,650" href="$url('Coupon-Download','couponCode', 'PINKTONER20')$" onfocus="this.blur()">-->
+                <area shape="rect" coords="506,588,806,650" href="$httpUrl('Product-Show','pid','529938')$" onfocus="this.blur()">
+                <area shape="rect" coords="342,806,644,866" href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+            </map>
+        </div>
+        <div>
+            <img src="events/av_promotion_03.jpg?$staticlink$" title="" alt="">
+        </div>
+        <div>
+            <img src="events/av_promotion_04.jpg?$staticlink$" title="" alt="">
+        </div>
+        <div>
+            <img src="events/av_promotion_05.jpg?$staticlink$" alt="" usemap="#event-2-05" border="0">
+            <map name="event-2-05" id="event-2-05">
+                <area shape="rect" coords="97,210,304,625" href="$httpUrl('Product-Show','pid','530130')$" onfocus="this.blur()">
+                <area shape="rect" coords="391,210,595,625" href="$httpUrl('Product-Show','pid','524830')$" onfocus="this.blur()">
+                <area shape="rect" coords="683,210,880,625" href="$httpUrl('Product-Show','pid','517833')$" onfocus="this.blur()">
+            </map>
+
+        </div>
+        <div>
+            <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+                <img src="events/av_promotion_06.jpg?$staticlink$" title="" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="pc-hidden">
+        <div class="section_m_01">
+            <img src="events/av_promotion_M_01-01.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_02">
+            <img src="events/av_promotion_M_02.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <!--<a class="coupon-button-01 download-coupon-event" href="$url('Coupon-Download','couponCode', 'PINKTONER20')$" onfocus="this.blur()" style="top:49.9170%; left:10.2666%;">20% 쿠폰 다운받기</a>-->
+                <a href="$httpUrl('Product-Show','pid','529938')$" onfocus="this.blur()" style="top:49.9170%; right:10.2666%;">핑크토너 구매하기</a>
+                <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()" style="top:70.4809%; left:30.6666%;">페이스북 간편가입</a>
+            </div>
+        </div>
+        <div class="section_m_03">
+            <img src="events/av_promotion_M_03.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_04">
+            <img src="events/av_promotion_M_04.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_05">
+            <img src="events/av_promotion_M_05.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <a href="$httpUrl('Product-Show','pid','530130')$" onfocus="this.blur()">자세히보기</a>
+                <a href="$httpUrl('Product-Show','pid','524830')$" onfocus="this.blur()">자세히보기</a>
+                <a href="$httpUrl('Product-Show','pid','517833')$" onfocus="this.blur()">자세히보기</a>
+            </div>
+        </div>
+        <div class="section_m_06">
+            <a href="https://www.dermo-cosmeshop.co.kr/register" onfocus="this.blur()">
+                <img src="events/av_promotion_M_06.jpg?$staticlink$" alt="" border="0">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- <div class="coupon-button-wrapper">
+        <a class="coupon-button-01 download-coupon-event" href="$url('Coupon-Download','couponCode', 'AVENEDISCOUNT')$"></a>
+    </div> -->
+</div>

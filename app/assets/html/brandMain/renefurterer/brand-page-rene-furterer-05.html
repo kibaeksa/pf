@@ -1,0 +1,55 @@
+<style type="text/css">
+    .brand-description{
+        position: relative;
+        height: 500px;
+        background:url('Brand_main/bg-brand_desc_rf.jpg?$staticlink$') 0 0 no-repeat;
+    }
+
+    .brand-description .main-info-wrapper{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .brand-description .main-info-wrapper .main-info{border:1px solid #d9ba7c; padding-top:60px; height: 462px;}
+    .brand-description .main-info > p{font-family: 'Noto Sans KR Light'; font-size:14px; color:#d9ba7c;}
+
+@media screen and (max-width:767px) {
+    .brand-description .main-info-wrapper .main-info{padding ; 30px;}
+    .brand-wrapper .brand-description .main-info p{
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+   .brand-description .list-style li a {padding: 0 5px;}
+}
+</style>
+
+
+
+<div class="container">
+    <div class="brand-information">
+        <div class="brand-section brand-description">
+            <div class="main-info-wrapper">
+                <div class="main-info">
+                    <h2 class="img-logo" style="margin-top:0; margin-bottom:30px;">
+                        <picture>
+                            <source srcset="Brand_main/RN_logo_w.png?$staticlink$" media="(min-width: 769px)">
+                            <img srcset="Brand_main/RN_logo_w.png?$staticlink$" alt="renefurterer Logo" title="renefurterer">
+                        </picture>
+                    </h2>
+                    <p>1957년, 프랑스 헤어 스타일리스트 르네휘테르는
+‘아름다운 모발은 건강한 두피에서 시작된다’는 철학을 바탕으로 100% 내추럴 에센셜 오일과 식물 추출물을 활용한 제품을 선보인 이후 전세계인이 사랑하는 프랑스 프리미엄 두피&헤어케어 브랜드가 되었습니다.</p>
+                    <ul class="list-style">
+                        <li><a href="$httpUrl('Search-Show', 'cgid', 'renefurterer')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#fff; ">제품 전체보기</a></li>
+                        <li><a href="$url('Page-Show','cid','about-renefurterer')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#fff; ">브랜드 스토리</a></li>
+                        <li><a href="$url('Search-ShowContent','fdid','videoshoppage')$#rene-furterer" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#fff; ">비디오 샵</a></li>
+                         <p></p>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="image-full"><img alt="" src="Brand_main/AD_info.jpg?$staticlink$" title="" /></div> -->
+        </div>
+    </div>
+</div>

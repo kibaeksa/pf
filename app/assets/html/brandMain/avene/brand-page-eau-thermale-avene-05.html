@@ -1,0 +1,57 @@
+<style type="text/css">
+    .brand-description{
+        position: relative;
+        height: 500px;
+        background:url('Brand_main/bg-brand_desc_avene.jpg?$staticlink$') 0 0 no-repeat;
+    }
+
+    .brand-description .main-info-wrapper{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .brand-description .main-info-wrapper .main-info{border:2px solid #ff806d; height: 462px;}
+    .brand-description .main-info > p{font-family: 'Noto Sans KR Light'; font-size:14px; color:#888;}
+    .brand-description .main-info .list-style p{font-family: 'Noto Sans KR Light'; font-size:11px; color:#ff806d;position:absolute; left:30px; bottom:20px; letter-spacing: -0.05px;}
+
+@media screen and (max-width:767px) {
+    .brand-description .main-info-wrapper .main-info{padding ; 30px;}
+    .brand-wrapper .brand-description .main-info p{
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+   .brand-description .list-style li a {padding: 0 5px;}
+   .brand-description .main-info .list-style p{font-size:10px; left:50%; bottom:10px; margin-left:-108px;}
+   .brand-description .main-info .list-style p span{display: block;}
+}
+</style>
+
+
+
+<div class="container">
+    <div class="brand-information">
+        <div class="brand-section brand-description">
+            <div class="main-info-wrapper">
+                <div class="main-info">
+                    <h2 class="img-logo" style="margin-top:0; margin-bottom:30px;">
+                        <picture>
+                            <source srcset="Brand_main/AV_logo.png?$staticlink$" media="(min-width: 769px)">
+                            <img srcset="Brand_main/AV_logo.png?$staticlink$" alt="Avene Logo" title="Avene">
+                        </picture>
+                    </h2>
+                    <p style="">더마톨로지컬 엑스퍼트 오 떼르말 아벤느는 유럽 NO.1* 더모코스메틱으로 지속적인 피부 연구를 통해 민감 피부를 위한 전문적인 솔루션을 제공합니다. 아벤느 온천수는 끊임없이 연구되고 있습니다. 50여건의 피부과 학술지 논문에 게재되어 과학적으로 확인되었으며, 민감 피부를 위한 더모 코스메틱의 가치를 지켜가고 있습니다.</p>
+                    <ul class="list-style">
+                        <li><a href="$httpUrl('Search-Show', 'cgid', 'avene')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#ff806d; ">제품 전체보기</a></li>
+                        <li><a href="$url('Page-Show','cid','about-avene')$" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#ff806d; ">브랜드 스토리</a></li>
+                        <li><a href="$url('Search-ShowContent','fdid','videoshoppage')$#avene" style="font-family: 'Noto Sans KR Regular'; font-size:13px; color:#ff806d; ">비디오 샵</a></li>
+                         <p><span>*2016 IMS Health 조사 유럽 약국 화장품</span><span>더모 코스메틱 부문 판매 1위</span></p>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="image-full"><img alt="" src="Brand_main/AD_info.jpg?$staticlink$" title="" /></div> -->
+        </div>
+    </div>
+</div>

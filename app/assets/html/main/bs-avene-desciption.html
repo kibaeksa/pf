@@ -1,0 +1,234 @@
+<style>
+    .brand-story .tab-content .description{position:relative;}
+    .brand-story .tab-content .description .prod-background{width:100%;height:100%;position:absolute;top:0;left:0;z-index:0;background-position:center center;background-repeat:no-repeat;background-color:#000;}
+    .brand-story .tab-content#bs-avene .description .prod-background{
+        background-color:#fff;
+    }
+
+    .brand-story .tab-content#bs-avene .description .prod-background{
+        background-image:url('Brand_story_logo/bg-brand_story_avene.jpg?$staticlink$');
+        background-color:#fff;
+    }
+
+    .brand-story .tab-content#bs-aderma .description .prod-background{
+        background-image:url('Brand_story_logo/bg-brand_story_aderma.jpg?$staticlink$');
+        background-color:#f9f9f9;
+    }
+
+    .brand-story .tab-content#bs-ducray .description .prod-background{
+        background-image:url('Brand_story_logo/bg-brand_story_ducray.jpg?$staticlink$');
+        background-color:#f0f1f6;
+    }
+
+    .brand-story .tab-content#bs-klorane .description .prod-background{
+        background-image:url('Brand_story_logo/bg-brand_story_klorane.jpg?$staticlink$');
+        background-color:#fff;
+    }
+
+    .brand-story .tab-content#bs-renefurterer .description .prod-background{
+        background-image:url('Brand_story_logo/bg-brand_story_rene.jpg?$staticlink$');
+        background-color:#000;
+    }
+
+
+    .brand-story .tab-content .description .container{position:relative;z-index:2;height:350px;}
+    .brand-story .tab-content .description .container .content-asset{height:350px;}
+    .brand-story .tab-content .description {background-image:none !important; background-color: #fff !important;}
+    .brand-story .tab-content .description .brand-title {display: table-cell; vertical-align: middle; width: 245px; height: 350px; box-sizing: border-box;}
+    .brand-story .tab-content .description .brand-info {display: table-cell; vertical-align: middle; width: 745px; height: 350px; box-sizing: border-box; text-align: left; padding-top: 50px;}
+    .brand-story .tab-content .description .brand-info .logo-brand-story {height:90px !important;}
+    .brand-story .tab-content .description .brand-info .logo-brand-story img{width: 200px !important;}
+    .brand-story .tab-content .description .brand-info .longdesc {text-align: left; width: auto;}
+    .shortdesc-link {font-family: 'Noto Sans KR Regular'; color:#ff8675 !important; font-size: 28px !important; line-height: 34px !important;}
+    .shortdesc-link span{display: block;}
+    .longdesc-link {font-family: 'Noto Sans KR Light'; color:#888888 !important; font-size: 16px !important; line-height: 22px !important; height: 3em !important;}
+    .brand-story .tab-content .description .brand-info .see-all {text-align: left; padding: 0;}
+    .brand-story .tab-content .description .brand-info .see-all a{font-family: 'Noto Sans KR Light' !important; line-height:34px !important; background: none !important;}
+    .brand-story .tab-content .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content .description .brand-info .see-all .see-all-link{text-align: center;}
+
+
+
+    .brand-story .tab-content#bs-avene .description .brand-info .shortdesc .shortdesc-link{
+        color:#f08774 !important;
+    }
+
+    .brand-story .tab-content#bs-avene .description .brand-info .longdesc .longdesc-link{
+
+    }
+
+    .brand-story .tab-content#bs-avene .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content#bs-avene .description .brand-info .see-all .see-all-link{
+        color:#fb8874 !important;
+        border-color:#fb8874c !important;
+    }
+
+    .brand-story .tab-content#bs-aderma .description .brand-info .shortdesc .shortdesc-link{
+        color:#60bb46 !important;
+    }
+
+    .brand-story .tab-content#bs-aderma .description .brand-info .longdesc .longdesc-link{
+        color:#978c85 !important;
+    }
+
+    .brand-story .tab-content#bs-aderma .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content#bs-aderma .description .brand-info .see-all .see-all-link{
+        color:#74665b !important;
+        border-color:#978c85 !important;
+    }
+
+    .brand-story .tab-content#bs-ducray .description .brand-info .shortdesc .shortdesc-link{
+        color:#4c5a62 !important;
+    }
+
+    .brand-story .tab-content#bs-ducray .description .brand-info .longdesc .longdesc-link{
+
+    }
+
+    .brand-story .tab-content#bs-ducray .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content#bs-ducray .description .brand-info .see-all .see-all-link{
+        color:#8c9194 !important;
+        border-color:#777e83 !important;
+    }
+
+    .brand-story .tab-content#bs-klorane .description .brand-info .shortdesc .shortdesc-link{
+        color:#046240 !important;
+    }
+
+    .brand-story .tab-content#bs-klorane .description .brand-info .longdesc .longdesc-link{
+        color:#676767 !important;
+    }
+
+    .brand-story .tab-content#bs-klorane .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content#bs-klorane .description .brand-info .see-all .see-all-link{
+        color:#046240 !important;
+        border-color:#1c7555 !important;
+    }
+
+    .brand-story .tab-content#bs-renefurterer .description .brand-info .shortdesc .shortdesc-link{
+        color:#d9ba7c !important;
+    }
+
+    .brand-story .tab-content#bs-renefurterer .description .brand-info .longdesc .longdesc-link{
+        color:#dddddd !important;
+    }
+
+    .brand-story .tab-content#bs-renefurterer .description .brand-info .see-all .barnd-corner-link,
+    .brand-story .tab-content#bs-renefurterer .description .brand-info .see-all .see-all-link{
+        color:#c2a467 !important;
+        border-color:#c2a467 !important;
+        background:none !important;
+    }
+
+
+
+    @media screen and (max-width:767px) {
+        .brand-story .tab-content .description .container{height:auto;}
+        .brand-story .tab-content .description .container .content-asset{height:auto;}
+        .brand-story .tab-content .description .container .content-asset{}
+        .brand-story .tab-content .description {background-image:none !important;}
+        .brand-story .tab-content .description .brand-info{background:none;}
+        .brand-story .tab-content .description .brand-title {display: block; width: 100%; height: auto; padding-top: 30px; text-align: center;}
+        .shortdesc-link span{display: inline;}
+        .brand-story .tab-content .description .brand-info {display: block; width: 100%; height: auto; padding-top: 15px; padding-bottom: 140px; text-align: center;}
+        .brand-story .tab-content .description .brand-info .logo-brand-story {height:90px !important;}
+        .brand-story .tab-content .description .brand-info .logo-brand-story img{width: 200px !important;}
+        .brand-story .tab-content .description .brand-info .longdesc {text-align: center; width: auto;}
+        .shortdesc-link {color:#afa298 !important; font-size: 18px !important; line-height: 24px !important;}
+        .longdesc-link {color:#888888 !important; font-size: 14px !important; line-height: 18px !important; theight: 3em !important;}
+        .brand-story .tab-content .description .brand-info .see-all {text-align: center; padding: 0;}
+        .brand-story .tab-content .description .brand-info .see-all a{line-height:34px !important; background: #fff !important; padding: 4px 16px !important;}
+        .brand-story .tab-content .description .brand-info .see-all .barnd-corner-link,
+        .brand-story .tab-content .description .brand-info .see-all .see-all-link{text-align: center;}
+        .brand-story .tab-content .description .prod-background{
+           -webkit-background-size: cover;
+           background-size: cover;
+        }
+
+        .brand-story .tab-content .description .brand-info .see-all .barnd-corner-link,
+        .brand-story .tab-content .description .brand-info .see-all .see-all-link{
+            width: 140px;
+            padding: 4px 0 !important;
+
+        }
+
+        .brand-story .tab-content#bs-avene .description .prod-background{
+            background-image:url('Brand_story_logo/bg-brand_story_avene_m.jpg?$staticlink$');
+            background-color:#fff;
+        }
+
+        .brand-story .tab-content#bs-aderma .description .prod-background{
+            background-image:url('Brand_story_logo/bg-brand_story_aderma_m.jpg?$staticlink$');
+            background-color:#f9f9f9;
+        }
+
+        .brand-story .tab-content#bs-ducray .description .prod-background{
+            background-image:url('Brand_story_logo/bg-brand_story_ducray_m.jpg?$staticlink$');
+            background-color:#f0f1f6;
+        }
+
+        .brand-story .tab-content#bs-klorane .description .prod-background{
+            background-image:url('Brand_story_logo/bg-brand_story_klorane_m.jpg?$staticlink$');
+            background-color:#fff;
+        }
+
+        .brand-story .tab-content#bs-renefurterer .description .prod-background{
+            background-image:url('Brand_story_logo/bg-brand_story_rene_m.jpg?$staticlink$');
+            background-color:#000;
+        }
+
+        .brand-story .tab-content#bs-renefurterer .description .brand-title .logo-brand-story img{
+            width: 25%;
+        }
+
+        .brand-story .tab-content#bs-renefurterer .description .brand-info .see-all .barnd-corner-link,
+        .brand-story .tab-content#bs-renefurterer .description .brand-info .see-all .see-all-link{
+            background:#000 !important;
+        }
+        .brand-story .tab-content#bs-aderma .shortdesc-link span{
+            display: block !important;
+        }
+    }
+</style>
+<div class="brand-title">
+    <h3 class="logo-brand-story"><a href="#"><img alt="" class="img" src="Brand_story_logo/logo-av.png?$staticlink$" title="" /> </a></h3>
+</div>
+<div class="brand-info">
+    <div class="shortdesc">
+        <a class="shortdesc-link" href=""><span>더마톨로지컬 엑스퍼트</span><span>오 떼르말 아벤느</span></a>
+    </div>
+
+    <div class="longdesc">
+        <a class=" longdesc-link" href="">유럽 No.1* 더모코스메틱으로, 지속적인 피부 연구를 통해<br>민감 피부를 위한 전문적인 솔루션을 제공합니다.</a>
+    </div>
+
+    <div class="see-all">
+        <a class="barnd-corner-link" href="$httpUrl('Search-ShowContent','fdid','brand-page-eau-thermale-avene')$" style="border-color:#fb8874;">브랜드몰 바로가기</a>
+        <a class="see-all-link" href="$httpUrl('Search-Show','cgid','avene')$" style="border-color:#fb8874;">전체상품 보기</a>
+    </div>
+</div>
+
+<script>
+
+    (function(){
+        function appendBg(){
+            var elemDescription = document.querySelectorAll('.brand-story .tab-content .description');
+            var i = 0;
+
+            for(; i < elemDescription.length; i++){
+                var dummy = document.createElement('div');
+                dummy.setAttribute('class','prod-background');
+                elemDescription[i].appendChild(dummy);
+            }
+        }
+
+
+        if(window.addEventListener){
+            window.addEventListener('DOMContentLoaded',appendBg);
+        }else{
+            window.attachEvent('load',appendBg)
+        }
+    })();
+
+
+</script>

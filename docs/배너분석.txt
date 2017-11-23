@@ -1,0 +1,30 @@
+* html 파일명과 어드민에 저장된 Content Assets 이름은 동일하다.
+* 공백이 있을경우 파일명은 그대로 저장해도 상관없지만 뒷단에서는 ᾩ 로 구분한다.
+
+
+-헤더
+	최상단 검은영역 (CS 연락처 , 유틸메뉴)
+		customer-center-header
+
+-푸터
+	ㄴ상단부분
+		Footer call center info
+
+
+- 메인
+	ㄴ메인배너
+		home-banner-carrousel
+	ㄴ프로모션 메세지
+		Promotion Message
+	ㄴ중간띠배너
+		promotion-banner
+	ㄴBrand story에 탭에 대한 이미지
+		(bs-avene-desciption , bs-aderma-desciption , bs-ducray-desciption , bs-klorane-desciption, bs-renefurterer-desciption , )
+
+	ㄴNews & Beauty Tips 에 content-asset 부터 ("비디오샵 전체보기 버튼까지")
+		new-and-beauty-tips
+
+	ㄴFind Your Product content-asset 부터
+		find-your-product
+	ㄴ혜택 하단4개 각각 배너임
+		block-three-pushes , block-three-pushes-yellow , block-three-pushes-facebook , block-three-pushes-4

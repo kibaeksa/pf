@@ -1,0 +1,610 @@
+
+div.header
+    #{testPug}
+    div.menu-scroll-bar
+        div.top-header
+            div.customer-action.clearfix
+                div.content-asset 
+                                
+        div.reversed-header(height="95px;")
+            span.visually-hidden Reversed header for sticky header on mobile
+                    
+        header.clearfix        
+            div.wrap_header
+                div.btn-menu
+                div.logo
+                    a(href="#")
+                        picture
+                            source(srcset="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw272622b3/images/header/pfdc-logo-desk.png" , media="(min-width: 992px)")
+                            img(srcset="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dwcb8893d4/images/header/pfdc-logo-mob.png")
+                div.btn-search
+                    span.icon-SEARCH
+            
+                div.search-box
+                    form(role="search" , action="#" , method="get" , ,name="simpleSearch")
+                        span.icon-CLOSE.close-search
+                        input#q(type="text" , name="1" , value="" , placeholder="키워드로 검색해보세요" , maxlength="15")
+                        button(type="submit")
+                            span.icon-SEARCH.icon-SEARCH-button
+                        div.search-suggestion
+                            ul.search-suggestion-wrap
+                                li.ss-header
+                                    p 건조한 날씨 당신을 위한 핫키워드
+                                li.item
+                                    div.order 1
+                                    div.value
+                                        a(href="#") 클로란뿌리영양세럼
+                                li.item
+                                    div.order 2
+                                    div.value
+                                        a(href="#") 0%시칼파트 S.O.S 크림
+                                        
+                                li.item
+                                    div.order 3
+                                    div.value
+                                        a(href="#") NEW 시칼파트 블루젤
+                                        
+                                li.item
+                                    div.order 4
+                                    div.value
+                                        a(href="#") 아벤느핑크토너
+                                        
+                                li.item
+                                    div.order 5
+                                    div.value
+                                        a(href="#") 포티샤특별구성
+                                        
+                                li.item
+                                    div.order 6
+                                    div.value
+                                        a(href="#") 베이비페어세트
+                                        
+                                li.item
+                                    div.order 7
+                                    div.value
+                                        a(href="#") 르네휘테르 3-STEP
+                                        
+                                li.item
+                                    div.order 8
+                                    div.value
+                                        a(href="#") 0%방부제추천
+                ul.utility-links
+                    li.your-dermo
+                        a.link-cosme_diag(href="http://", data-gtm-name="cosme diag")
+                            span.icon-MICROSCOPE_ROUND.icon-yourdermo
+                            span 피부 &amp; 헤어 진단
+                    li.about-dermo
+                        a(href="#")
+                            span.icon-PICTO_ROUND.icon-aboutdermo
+                            span
+                                span About
+                                |더모 코스메틱
+                        div.wrap_account
+                            h3.title_page 내 계정
+                            
+                    li.my-account
+                        a(href="#")
+                            span.icon-USER.account-button
+                        div.wrap_account
+                            h3.title_page 내 계정
+                            div.content-account
+                                div.text-content-wrapper
+                                    p 로그인하시고 더 많은 혜택 받아보세요.
+                                div.wrap_button_login
+                                    a.mobile-login-button 로그인
+                                    a 회원가입
+                    li.cart.mini-cart
+                        a#minicart-total-quantity
+                            span.icon-CART.minicart-button
+                            span.minicart-quantity 1
+                        
+        div.main-nav-wrapper
+            nav.clearfix
+                div.wrap_nav
+                    div.container
+                        ul.menu-category.level-1
+                            li.category-menu.has-child
+                                a.has-sub-menu(href="javascript:void(0)") 브랜드별
+                                span.icon-PLUS.icon_menu
+                                div.level-2
+                                    div.left-submenu-horizontal
+                                        h2.header-submenu 원하시는 브랜드를 선택하세요
+                                        div.row-submenu.row-0(style="border-color: #ff8d7a")
+                                            div.title-submenu 르네휘테르
+                                                span.icon-PLUS.icon_menu_sub
+                                            div.description-brand 프랑스 프리미엄 두피&amp;헤어케어 르네휘테르
+                                            ul.brand-attribute
+                                                li
+                                                    a(href="#") 브랜드 홈 바로가기
+                                                li
+                                                    a(href="#") 전체 상품 보기
+                                        
+                                        div.row-submenu.row-1(style="border-color: #8fc941")
+                                            div.title-submenu 르네휘테르
+                                                span.icon-PLUS.icon_menu_sub
+                                            div.description-brand 프랑스 프리미엄 두피&amp;헤어케어 르네휘테르
+                                            ul.brand-attribute
+                                                li
+                                                    a(href="#") 브랜드 홈 바로가기
+                                                li
+                                                    a(href="#") 전체 상품 보기
+                                                    
+                                        div.row-submenu.row-1(style="border-color: #00a650")
+                                            div.title-submenu 클로란
+                                                span.icon-PLUS.icon_menu_sub
+                                            div.description-brand 식물과학이 만들어낸 클로란
+                                            ul.brand-attribute
+                                                li
+                                                    a(href="#") 브랜드 홈 바로가기
+                                                li
+                                                    a(href="#") 전체 상품 보기  
+                                                    
+                                        div.row-submenu.row-1(style="border-color: #f4b1be")
+                                            div.title-submenu 듀크레이
+                                                span.icon-PLUS.icon_menu_sub
+                                            div.description-brand 문제성 피부 두피 전문가 듀크레이
+                                            ul.brand-attribute
+                                                li
+                                                    a(href="#") 브랜드 홈 바로가기
+                                                li
+                                                    a(href="#") 전체 상품 보기  
+                                                    
+                                        div.row-submenu.row-1(style="border-color: #afa298")
+                                            div.title-submenu 아더마
+                                                span.icon-PLUS.icon_menu_sub
+                                            div.description-brand 연약한 피부를 위한 클리닉 전용 더모 코스메틱
+                                            ul.brand-attribute
+                                                li
+                                                    a(href="#") 브랜드 홈 바로가기
+                                                li
+                                                    a(href="#") 전체 상품 보기  
+                                    div.right-submenu-horizontal
+                                        div#product-brand.product-listing.product-listing-1x3
+                                            h2.header-submenu 브랜드 베스트 상품
+                                            div.owl-carousel.horizontal-carousel.search-result-items.tiles-container
+                                                div.item.grid-tile.item-0
+                                                    div#9b3384b120182c2486105d00c7.product-tile(data-itemid="524822")
+                                                        div.product-image-wrapper(style="border: 1px solid #ff8d7a")
+                                                            div.trend-award-wrapper
+                                                            a.product-image(href="#",title="오 떼르말")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x")
+                                                        
+                                                        div.product-info
+                                                            h5.product-brand
+                                                                a(href="#") 아벤느
+                                                            h4.product-name
+                                                                a.name-link.link-more(href="#") 오 떼르말
+                                                            p.product-description
+                                                                a(href="#") #건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수
+                                                            p.product-variant
+                                                                span.label 용량
+                                                                span.value 300ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 23,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart 자세히 보기
+                                                                
+                                                div.item.grid-tile.item-1
+                                                    div#9b3384b120182c2486105d00c7.product-tile(data-itemid="524822")
+                                                        div.product-image-wrapper(style="border: 1px solid #8fc941")
+                                                            div.trend-award-wrapper
+                                                            a.product-image(href="#",title="오 떼르말")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x")
+                                                        
+                                                        div.product-info
+                                                            h5.product-brand
+                                                                a(href="#") 아벤느
+                                                            h4.product-name
+                                                                a.name-link.link-more(href="#") 오 떼르말
+                                                            p.product-description
+                                                                a(href="#") #건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수
+                                                            p.product-variant
+                                                                span.label 용량
+                                                                span.value 300ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 23,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart 자세히 보기
+                                                                
+                                                                
+                                                div.item.grid-tile.item-1
+                                                    div#9b3384b120182c2486105d00c7.product-tile(data-itemid="524822")
+                                                        div.product-image-wrapper(style="border: 1px solid #00a650")
+                                                            div.trend-award-wrapper
+                                                            a.product-image(href="#",title="오 떼르말")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x")
+                                                        
+                                                        div.product-info
+                                                            h5.product-brand
+                                                                a(href="#") 아벤느
+                                                            h4.product-name
+                                                                a.name-link.link-more(href="#") 오 떼르말
+                                                            p.product-description
+                                                                a(href="#") #건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수
+                                                            p.product-variant
+                                                                span.label 용량
+                                                                span.value 300ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 23,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart 자세히 보기
+                                                                
+                                                                
+                                                div.item.grid-tile.item-1
+                                                    div#9b3384b120182c2486105d00c7.product-tile(data-itemid="524822")
+                                                        div.product-image-wrapper(style="border: 1px solid #00a650")
+                                                            div.trend-award-wrapper
+                                                            a.product-image(href="#",title="오 떼르말")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x")
+                                                        
+                                                        div.product-info
+                                                            h5.product-brand
+                                                                a(href="#") 아벤느
+                                                            h4.product-name
+                                                                a.name-link.link-more(href="#") 오 떼르말
+                                                            p.product-description
+                                                                a(href="#") #건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수
+                                                            p.product-variant
+                                                                span.label 용량
+                                                                span.value 300ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 23,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart 자세히 보기
+                                                                
+                                                                
+                                                div.item.grid-tile.item-1
+                                                    div#9b3384b120182c2486105d00c7.product-tile(data-itemid="524822")
+                                                        div.product-image-wrapper(style="border: 1px solid #f4b1be")
+                                                            div.trend-award-wrapper
+                                                            a.product-image(href="#",title="오 떼르말")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwafc53349/images/avene/AVENE-Eau-Thermale-300ml.jpg?sw=236&amp;sh=236 2x")
+                                                        
+                                                        div.product-info
+                                                            h5.product-brand
+                                                                a(href="#") 아벤느
+                                                            h4.product-name
+                                                                a.name-link.link-more(href="#") 오 떼르말
+                                                            p.product-description
+                                                                a(href="#") #건강한피부변화#3초습관#진정#회복#민감피부#미스트#온천수
+                                                            p.product-variant
+                                                                span.label 용량
+                                                                span.value 300ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 23,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart 자세히 보기
+                            li.category-menu.has-child
+                                a.has-sub-menu(href="javascript:void(0)") 제품유형별
+                                span.icon-PLUS.icon_menu
+                                div.level-2
+                                    ul.left-submenu-vertical
+                                        li
+                                            h2.header-submenu 페이스
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 온천수 스프레이
+                                                li
+                                                    a(href="#") 토너
+                                                li
+                                                    a(href="#") 세럼 / 에멀전 / 로션
+                                                li
+                                                    a(href="#") 크림 / 밤    
+                                                li
+                                                    a(href="#") 전체보기
+                                        li
+                                            h2.header-submenu 헤어
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 두피 전용 케어
+                                                li
+                                                    a(href="#") 샴푸
+                                                li
+                                                    a(href="#") 드라이 샴푸
+                                                li
+                                                    a(href="#") 린스 / 컨디셔너
+                                                li
+                                                    a(href="#") 헤어 마스크 / 팩
+                                                li
+                                                    a(href="#") 헤어에센스 / 크림
+                                                li
+                                                    a(href="#") 헤어 오일 / 미스트 스프레이
+                                                li
+                                                    a(href="#") 헤어 젤 / 왁스 / 스타일링 스프레이
+                                                li
+                                                    a(href="#") 헤어전용 선케어    
+                                        li
+                                            h2.header-submenu 바디
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 클렌저
+                                                li
+                                                    a(href="#") 크림
+                                                li
+                                                    a(href="#") 밤 / 오일
+                                                li
+                                                    a(href="#") 에멀전 / 로션    
+                                        li
+                                            h2.header-submenu 선케어
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 에멀전 / 플루이드
+                                                li
+                                                    a(href="#") 크림 / 스틱
+                                                li
+                                                    a(href="#") 헤어전용 선케어
+                                        li
+                                            h2.header-submenu 베이비 / 패밀리
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 클렌저
+                                                li
+                                                    a(href="#") 온천수 스프레이
+                                                li
+                                                    a(href="#") 에멀전 / 로션 / 크림
+                                                li
+                                                    a(href="#") 밤 / 오일
+                                                li
+                                                    a(href="#") 선케어
+                                                    
+                                    div.right-submenu-vertical
+                                        div.product-listing.product-listing-1x2
+                                            h2.header-submenu 베스트 상품
+                                            ul.search-result-items.tiles-container
+                                                li.grid-tile
+                                                    div.product-tile
+                                                        div.product-image-wrapper(style="border: 1px solid #ff8d7a")
+                                                            div.trend-award-wrapper
+                                                                div.trend
+                                                                    img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png")
+                                                                        
+                                                            a.product-image(href="#")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=236&amp;sh=236 2x")
+                                                            
+                                                        div.product-info
+                                                            div.product-brand
+                                                                a(href="#") 아벤느
+                                                            div.product-name
+                                                                a.name-link.link-more(href="#") NEW 시칼파트 블루젤 - 스킨 베이스
+                                                            div.product-description
+                                                                a(href="#") #에스테틱#손상개선크림#진정#홈케어
+                                                            div.product-variant
+                                                                span.label 용량
+                                                                span.value 40 ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 22,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart(href="#") 자세히 보기
+                                                                
+                                                                
+                                                li.grid-tile
+                                                    div.product-tile
+                                                        div.product-image-wrapper(style="border: 1px solid #ff8d7a")
+                                                            div.trend-award-wrapper
+                                                                div.trend
+                                                                    img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png")
+                                                                        
+                                                            a.product-image(href="#")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=236&amp;sh=236 2x")
+                                                            
+                                                        div.product-info
+                                                            div.product-brand
+                                                                a(href="#") 아벤느
+                                                            div.product-name
+                                                                a.name-link.link-more(href="#") NEW 시칼파트 블루젤 - 스킨 베이스
+                                                            div.product-description
+                                                                a(href="#") #에스테틱#손상개선크림#진정#홈케어
+                                                            div.product-variant
+                                                                span.label 용량
+                                                                span.value 40 ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 22,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart(href="#") 자세히 보기
+                                                    
+                                    
+                            li.category-menu.has-child
+                                a.has-sub-menu(href="javascript:void(0)") 피부 &amp; 헤어 타입별
+                                span.icon-PLUS.icon_menu
+                                div.level-2
+                                    ul.left-submenu-vertical
+                                        li
+                                            h2.header-submenu 피부 타입
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 민감한 피부
+                                                li
+                                                    a(href="#") 매우 건조한 피부
+                                                li
+                                                    a(href="#") 건조한 피부
+                                                li
+                                                    a(href="#") 지복합성 / 트러블 피부  
+                                                li
+                                                    a(href="#") 자극받고 손상된 피부
+                                                li
+                                                    a(href="#") 모든 타입의 피부
+
+                                        li
+                                            h2.header-submenu 헤어 타입
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 힘없고 가는 모발
+                                                li
+                                                    a(href="#") 민감한 두피
+                                                li
+                                                    a(href="#") 손상된 모발
+                                                li
+                                                    a(href="#") 건조한 두피 / 모발
+                                                li
+                                                    a(href="#") 염색 모발
+                                                li
+                                                    a(href="#") 윤기없는 모발
+                                                li
+                                                    a(href="#") 볼륨없이 처지는 모발
+                                                li
+                                                    a(href="#") 지성 두피 / 모발
+                                                li
+                                                    a(href="#") 부스스한 모발
+                                                li
+                                                    a(href="#") 모든 타입의 두피/모발
+                                                li
+                                                    a(href="#") 비듬성 두피
+                                        li
+                                            h2.header-submenu 베이비 / 패밀리
+                                            span.header-submenu
+                                            ul.level-3
+                                                li
+                                                    a(href="#") 전체보기
+                                                li
+                                                    a(href="#") 민감한 피부
+                                                li
+                                                    a(href="#") 매우 건조한 피부
+                                                li
+                                                    a(href="#") 건조한 피부
+                                                li
+                                                    a(href="#") 자극받고 손상된 피부
+                                                li
+                                                    a(href="#") 모든 타입의 피부
+                                                    
+                                                    
+                                    div.right-submenu-vertical
+                                        div.product-listing.product-listing-1x2
+                                            h2.header-submenu 베스트 상품
+                                            ul.search-result-items.tiles-container
+                                                li.grid-tile
+                                                    div.product-tile
+                                                        div.product-image-wrapper(style="border: 1px solid #ff8d7a")
+                                                            div.trend-award-wrapper
+                                                                div.trend
+                                                                    img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png")
+                                                                        
+                                                            a.product-image(href="#")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=236&amp;sh=236 2x")
+                                                            
+                                                        div.product-info
+                                                            div.product-brand
+                                                                a(href="#") 아벤느
+                                                            div.product-name
+                                                                a.name-link.link-more(href="#") NEW 시칼파트 블루젤 - 스킨 베이스
+                                                            div.product-description
+                                                                a(href="#") #에스테틱#손상개선크림#진정#홈케어
+                                                            div.product-variant
+                                                                span.label 용량
+                                                                span.value 40 ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 22,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart(href="#") 자세히 보기
+                                                                
+                                                                
+                                                li.grid-tile
+                                                    div.product-tile
+                                                        div.product-image-wrapper(style="border: 1px solid #ff8d7a")
+                                                            div.trend-award-wrapper
+                                                                div.trend
+                                                                    img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/Sites-PFDC-KR-Site/-/default/dw2c42cec7/images/trends/new.png")
+                                                                        
+                                                            a.product-image(href="#")
+                                                                img.product-picture(srcset="https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=118&amp;sh=118 1x, https://www.dermo-cosmeshop.co.kr/dw/image/v2/BBPR_PRD/on/demandware.static/-/Sites-pfdc-master-catalog/default/dwd5ef607c/images/avene/bundle-set/210439.jpg?sw=236&amp;sh=236 2x")
+                                                            
+                                                        div.product-info
+                                                            div.product-brand
+                                                                a(href="#") 아벤느
+                                                            div.product-name
+                                                                a.name-link.link-more(href="#") NEW 시칼파트 블루젤 - 스킨 베이스
+                                                            div.product-description
+                                                                a(href="#") #에스테틱#손상개선크림#진정#홈케어
+                                                            div.product-variant
+                                                                span.label 용량
+                                                                span.value 40 ml
+                                                            div.wrap_price
+                                                                div.price.price-format-sale ₩ 22,000
+                                                            div.product-review
+                                                                div.rating
+                                                            form.pdpForm.wrap-button-cart(action="#")
+                                                                a.button-fancy-large.add-to-cart(href="#") 자세히 보기 
+                            li.category-menu
+                                a.has-sub-menu(href="javascript:void(0)") 베스트
+                                span.icon-PLUS.icon_menu
+                                    
+                            li.category-menu
+                                a.has-sub-menu(href="javascript:void(0)") 세일
+                                span.icon-PLUS.icon_menu
+                                    
+                            li.category-menu
+                                a.has-sub-menu(href="javascript:void(0)") 이벤트
+                                span.icon-PLUS.icon_menu
+                                    
+                            li.category-menu
+                                a.has-sub-menu(href="javascript:void(0)") 신상품
+                                span.icon-PLUS.icon_menu
+                                    
+                        div.brands-logos    
+                            div.content-asset
+                                ul.brands_logos_1
+                                    li
+                                        a(hef="#")
+                                            img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw8919da9b/menu-brands-logos/avene.png")
+                                    li
+                                        a(hef="#")
+                                            img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw491c4337/menu-brands-logos/furterer.png")
+                                                
+                                ul.brands_logos_2
+                                    li
+                                        a(hef="#")
+                                            img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw6456c631/menu-brands-logos/klorane.png")
+                                    li
+                                        a(hef="#")
+                                            img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw200c9e09/menu-brands-logos/ducray.png")            
+                                    li
+                                        a(hef="#")
+                                            img(src="https://www.dermo-cosmeshop.co.kr/on/demandware.static/-/Sites-PFDC-KR-Library/default/dw8b92e754/menu-brands-logos/aderma.png")
+
+        div.mobile-top-menu-wrapper
+            div.mobile-top-menu-inner
+                ul.hide-on-desktop.menu-top.mobile-top-menu.clearfix
+                    li
+                        a.item(href="#") 베스트
+                    li
+                        a.item(href="#") 세일
+                    li
+                        a.item(href="#") 이벤트
+                    li
+                        a.item(href="#") 신상품

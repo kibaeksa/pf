@@ -1,0 +1,105 @@
+<style>
+.mobile-hidden{display: block;}
+.pc-hidden{display: none;}
+
+.YT-pd{padding: 50px 0; background: #d9f3ee;}
+.youtubeWrap{text-align: center; }
+/*yotube*/
+
+.mobile-hidden img{display: block;}
+@media only screen and (max-width: 767px) {
+    .mobile-hidden{display: none;}
+    .pc-hidden{display: block;}
+
+    .YT-pd{padding: 20px;}
+    .youtubeWrap {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        margin-left: -50%;
+    }
+
+    .youtubeWrap:last-child{
+        margin-bottom: 0 !important;
+    }
+
+    .youtubeWrap iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pc-hidden > div{overflow: hidden; position: relative;}
+    .pc-hidden > div img{display: block;}
+    .pc-hidden div a{text-indent: -1000px;}
+
+    .section_m_01 .btn_with_box a{display: inline-block; position: absolute;}
+    .section_m_01 .btn_with_box a:nth-child(1){width:50%; height:85.2273%; top:14.7727%; left:0;}
+    .section_m_01 .btn_with_box a:nth-child(2){width:50%; height:85.2273%; top:14.7727%; right:0;}
+}
+.dn{display: none;}
+</style>
+$include('Product-GtmDataLayer', 'pid', '210389')$
+$include('Product-GtmDataLayer', 'pid', '210391')$
+$include('Product-GtmDataLayer', 'pid', '210439')$
+<div class="event-image">
+
+    <div class="mobile-hidden">
+        <div>
+            <img src="events/1710_AV_01.jpg?$staticlink$" alt="" usemap="#event-9-2-01" border="0">
+            <map name="event-9-2-01" id="event-9-2-01">
+                <area shape="rect" coords="4,144,484,916" href="$httpUrl('Product-Show','pid','210389')$" data-gtm-event="click-product" data-gtm-pid="210389" onfocus="this.blur()">
+                <area shape="rect" coords="496,144,972,916" href="$httpUrl('Product-Show','pid','210391')$" data-gtm-event="click-product" data-gtm-pid="210391" onfocus="this.blur()">
+            </map>
+        </div>
+        <div>
+            <div class="YT-pd">
+                <div class="youtubeWrap"><iframe width="880" height="495" src="https://www.youtube.com/embed/gOME0WIVXK0" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+        </div>
+        <div>
+            <img src="events/1710_AV_03.jpg?$staticlink$" alt="">
+        </div>
+        <div>
+            <a href="$httpUrl('Product-Show','pid','210439')$" data-gtm-event="click-product" data-gtm-pid="210439"  onfocus="this.blur()">
+                <img src="events/1710_AV_04.jpg?$staticlink$" alt="">
+            </a>
+        </div>
+        <div>
+            <img src="events/1710_AV_05.jpg?$staticlink$" alt="">
+        </div>
+        <div>
+            <img src="events/1710_AV_06.jpg?$staticlink$" alt="">
+        </div>
+    </div>
+
+    <div class="pc-hidden">
+        <div class="section_m_01">
+            <img src="events/1710_AV_m_01.jpg?$staticlink$" alt="" border="0">
+            <div class="btn_with_box">
+                <a href="$httpUrl('Product-Show','pid','210389')$" data-gtm-event="click-product" data-gtm-pid="210389" onfocus="this.blur()"></a>
+                <a href="$httpUrl('Product-Show','pid','210391')$" data-gtm-event="click-product" data-gtm-pid="210391" onfocus="this.blur()"></a>
+            </div>
+        </div>
+        <div class="section_m_02">
+            <div class="YT-pd">
+                <div class="youtubeWrap"><iframe src="https://www.youtube.com/embed/gOME0WIVXK0" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+        </div>
+        <div class="section_m_03">
+            <img src="events/1710_AV_m_03.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_04">
+            <a href="$httpUrl('Product-Show','pid','210439')$" data-gtm-event="click-product" data-gtm-pid="210439"  onfocus="this.blur()">
+                <img src="events/1710_AV_m_04.jpg?$staticlink$" alt="" border="0">
+            </a>
+        </div>
+        <div class="section_m_04">
+            <img src="events/1710_AV_m_05.jpg?$staticlink$" alt="" border="0">
+        </div>
+        <div class="section_m_03">
+            <img src="events/1710_AV_m_06.jpg?$staticlink$" alt="" border="0">
+        </div>
+    </div>
+
+</div>
