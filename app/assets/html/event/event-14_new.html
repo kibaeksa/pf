@@ -7,7 +7,8 @@
     .tab-wrapper{
         overflow: hidden;
         position: relative;
-        background: url('events/event-14/av_event14_tab_bg.jpg?$staticlink$') 0 0 no-repeat;
+        background: url('events/event-14/av_event14_tab_bg.jpg?$staticlink$') center 0 no-repeat;
+        background-size: 100%;
         padding-bottom: 50px;
     }
 
@@ -16,11 +17,9 @@
     }
 
     .tab-wrapper .tab-buttons{
-        width: 90.8%;
+        width: 90.9%;
         margin: 0 auto;
         overflow: hidden;
-        border: 1px solid #ff8d7a;
-        border-bottom: 0;
         top: 0;
         left: 0;
         margin-top: 22.2%;
@@ -30,51 +29,39 @@
 
     .tab-wrapper .tab-buttons a{
         width: 25%;
-        height: 80px;
+        height: auto;
         display: block;
         float: left;
-        text-align: center;
-        background: #ff8d7a;
     }
 
-    .tab-wrapper .tab-buttons a dl{
+    .tab-wrapper .tab-buttons a img{
         width: 100%;
-        height: 50px;
-        margin: 15px 0;
-        border-right: 1px solid #fff;
-        box-sizing: border-box;
+        height: auto;
+        display: block;
     }
 
-    .tab-wrapper .tab-buttons a:last-child dl{
-        border-right: 0;
+    .tab-wrapper .tab-buttons a img.act_img{
+        display: none;
     }
 
-    .tab-wrapper .tab-buttons dt{
-        width: 100%;
-        height: 30px;
-        font: 20px/30px 'Noto Sans KR Medium';
-        color: #fff;
+    .tab-wrapper .tab-buttons a img.img_dash{
+        display: none;
     }
 
-    .tab-wrapper .tab-buttons dd{
-        width: 100%;
-        height: 30px;
-        margin: 0;
-        font: 100 14px/20px 'futura Std';
-        letter-spacing: 1px;
-        color: #ffccc4;
+    .tab-wrapper .tab-buttons .active-tab img{
+        display: none;
     }
 
-    .tab-wrapper .tab-buttons .active-tab{
-        background: #fff;
+    .tab-wrapper .tab-buttons .active-tab img.act_img{
+        display: block;
     }
 
-    .tab-wrapper .tab-buttons .active-tab dt{
-        color: #ff8d7a;
+    .tab-wrapper .tab-buttons .active-tab img.img_dash{
+        display: none;
     }
 
     .tab-wrapper .tab-contents{
-        width: 90.8%;
+        width: 90.9%;
         top: 0;
         left: 0;
         margin-left: 5%;
@@ -129,18 +116,6 @@
 
     @media only screen and (max-width: 900px) {
 
-        .tab-wrapper .tab-buttons a{
-            height: 66px;
-        }
-
-        .tab-wrapper .tab-buttons a dl{
-            margin: 8px 0;
-        }
-
-        .tab-wrapper .tab-contents{
-            margin-top: calc(66px + 22.2%);
-        }
-
         .tab-wrapper .tab-contents .box .tab-link{
             width: 42%;
             margin-top: 110px;
@@ -163,11 +138,12 @@
         .pc-hidden{display: block;}
 
 
-    .tab-wrapper{
-        background: url('events/event-14/av_event14_tab_bg_m.jpg?$staticlink$') left top no-repeat;
-        background-size: 100%;
-        padding-bottom: 20px;
-    }
+        .tab-wrapper{
+            background: url('events/event-14/av_event14_tab_bg_m.jpg?$staticlink$') left top no-repeat;
+            background-size: 100%;
+            padding-bottom: 20px;
+        }
+
         .tab-wrapper .tab-buttons{
             position: absolute;
             z-index: 300;
@@ -253,37 +229,32 @@ $include('Product-GtmDataLayer', 'pid', '514073')$
 
         <div class="tab-wrapper">
             <!--<img src="events/event-14/av_event14_tab_bg.jpg?$staticlink$" alt="" class="tab-bgi">-->
-            <ul class="tab-buttons mob-hidden-tab">
+            <ul class="tab-buttons mob-hidden-tab" id="tabGroup">
                 <li class="t1">
                     <a href="javascript:void(0)" class="active-tab">
-                        <dl>
-                            <dt>극건성피부</dt>
-                            <dd>Very Dry Skin Care</dd>
-                        </dl>
+                        <img src="events/event-14/av_event14_tab01_btn_none.jpg?$staticlink$" alt="" class="img_none">
+                        <img src="events/event-14/av_event14_tab01_btn_dash.jpg?$staticlink$" alt="" class="img_dash">
+                        <img src="events/event-14/av_event14_tab01_btn_act.jpg?$staticlink$" alt="" class="act_img">
                     </a>
                 </li>
                 <li class="t2">
                     <a href="javascript:void(0)">
-                        <dl>
-                            <dt>건성피부</dt>
-                            <dd>Dry Skin Care</dd>
-                        </dl>
+                        <img src="events/event-14/av_event14_tab02_btn_none.jpg?$staticlink$" alt="" class="img_none" style='display:none;'>
+                        <img src="events/event-14/av_event14_tab02_btn_dash.jpg?$staticlink$" alt="" class="img_dash" style='display:block;'>
+                        <img src="events/event-14/av_event14_tab02_btn_act.jpg?$staticlink$" alt="" class="act_img">
                     </a>
                 </li>
                 <li class="t3">
                     <a href="javascript:void(0)">
-                        <dl>
-                            <dt>민감성피부</dt>
-                            <dd>Sensitive Skin Care</dd>
-                        </dl>
+                        <img src="events/event-14/av_event14_tab03_btn_none.jpg?$staticlink$" alt="" class="img_none" style='display:none;'>
+                        <img src="events/event-14/av_event14_tab03_btn_dash.jpg?$staticlink$" alt="" class="img_dash" style='display:block;'>
+                        <img src="events/event-14/av_event14_tab03_btn_act.jpg?$staticlink$" alt="" class="act_img">
                     </a>
                 </li>
                 <li class="t4">
                     <a href="javascript:void(0)">
-                        <dl>
-                            <dt>손상된피부</dt>
-                            <dd>Demaged Skin</dd>
-                        </dl>
+                        <img src="events/event-14/av_event14_tab04_btn_none.jpg?$staticlink$" alt="" class="img_none">
+                        <img src="events/event-14/av_event14_tab04_btn_act.jpg?$staticlink$" alt="" class="act_img">
                     </a>
                 </li>
             </ul>
@@ -417,6 +388,7 @@ $include('Product-GtmDataLayer', 'pid', '514073')$
                 (function(index){
                     elemTabButtons[index].addEventListener('click',function(){
                         changeTabAction(index);
+                        changeTabImg(index);
                     });
                 })(i)
             }
@@ -430,13 +402,91 @@ $include('Product-GtmDataLayer', 'pid', '514073')$
 
                 for(var i = 0; i < elemTabContents.length; i++){
                     if(i == currentIndex){
-                        elemTabButtons[i].className = 't'+(i+1)+' active-tab';
+                        elemTabButtons[i].className = 'active-tab';
                         elemTabContents[i].className = 'tab-content-box active-tab';
                     }else{
-                        elemTabButtons[i].className = 't'+(i+1);
+                        elemTabButtons[i].className = '';
                         elemTabContents[i].className = 'tab-content-box';
                     }
                 }
+            }
+
+            function changeTabImg(index){
+
+                var actTabIndex;
+                var tabLiSize = elemTabContents.length;
+
+                var tabGroup = document.getElementById('tabGroup');
+                var tabLiNodes = tabGroup.getElementsByTagName('li');
+
+                actTabIndex = index;
+
+                if(actTabIndex < tabLiSize - 1){
+                    for(var i = 0; i<tabLiSize - 1; i++){
+                        if(i == actTabIndex){
+                            if(i === 0){
+                                var actImgNodes = tabLiNodes.item(i).getElementsByTagName('img');
+
+                                actImgNodes.item(0).style.display = "none";
+                                actImgNodes.item(1).style.display = "none";
+                                actImgNodes.item(2).style.display = "block";
+
+                            }else{
+                                var actImgNodes = tabLiNodes.item(i).getElementsByTagName('img');
+                                var actFrontImgNodes = tabLiNodes.item(i-1).getElementsByTagName('img');
+
+                                actImgNodes.item(0).style.display = "none";
+                                actImgNodes.item(1).style.display = "none";
+                                actImgNodes.item(2).style.display = "block";
+
+                                actFrontImgNodes.item(0).style.display = "block";
+                                actFrontImgNodes.item(1).style.display = "none";
+                                actFrontImgNodes.item(2).style.display = "none";
+                            }
+                        }else{
+
+                            var basicImgNodes = tabLiNodes.item(i).getElementsByTagName('img');
+
+                            basicImgNodes.item(0).style.display = "none";
+                            basicImgNodes.item(1).style.display = "block";
+                            basicImgNodes.item(2).style.display = "none";
+                        }
+                    }
+
+                    var lastimgNodes = tabLiNodes.item(tabLiSize - 1).getElementsByTagName('img');
+
+                    lastimgNodes.item(0).style.display = "block";
+                    lastimgNodes.item(1).style.display = "none";
+
+                }else{
+
+                    for(var i = 0; i<tabLiSize - 1; i++){
+                        if(i == tabLiSize - 2){
+                            var actFrontImgNodes = tabLiNodes.item(i).getElementsByTagName('img');
+
+                            actFrontImgNodes.item(0).style.display = "block";
+                            actFrontImgNodes.item(1).style.display = "none";
+                            actFrontImgNodes.item(2).style.display = "none";
+
+                        }else{
+
+                            var basicImgNodes = tabLiNodes.item(i).getElementsByTagName('img');
+
+                            basicImgNodes.item(0).style.display = "none";
+                            basicImgNodes.item(1).style.display = "block";
+                            basicImgNodes.item(2).style.display = "none";
+
+                        }
+                    }
+
+                    var lastimgNodes = tabLiNodes.item(tabLiSize - 1).getElementsByTagName('img');
+
+                    lastimgNodes.item(0).style.display = "none";
+                    lastimgNodes.item(1).style.display = "block";
+                }
+
+                console.log(actTabIndex + "번째");
+
             }
         }
 
